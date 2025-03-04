@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Pagedone -->
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css" rel="stylesheet" />
+
+    <!-- Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="الموقع الشخصي للمطور يوسف - مطوّر ويب متكامل (Full Stack) متخصص في Laravel، استعرض مهاراتي وأعمالي في تطوير الويب.">
+    <meta name="keywords"
+        content="تطوير ويب, Laravel, مطور Full Stack, PHP, JavaScript, Tailwind, Flowbite, موقع شخصي, برمجة">
+    <meta name="author" content="يوسف">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph (For Social Media Sharing) -->
+    <meta property="og:title" content="يوسف - مطور ويب">
+    <meta property="og:description"
+        content="مرحبًا بك في موقعي الشخصي! أنا مطوّر ويب متخصص في Laravel، أعمل على بناء مواقع احترافية باستخدام أحدث التقنيات.">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card (For Better Display on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="يوسف - مطور ويب">
+    <meta name="twitter:description" content="اكتشف مهاراتي في تطوير الويب باستخدام Laravel و JavaScript والمزيد.">
+    <meta name="twitter:image" content="assets/images/logo.png">
+
+    <!-- Canonical URL (To Avoid Duplicate Content Issues) -->
+    <link rel="canonical" href="https://yourwebsite.com">
+
+    <!-- Apple Touch Icon (For iPhone Home Screen) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.png">
+
+    <!-- iPhone Settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="يوسف - مطور ويب">
+
+    <title>يوسف - مطور ويب متكامل</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <!-- CONTAINER -->
+    <div class="container mx-auto flex flex-col items-center justify-center px-6 lg:px-14 ">
+
+        <!-- HEADER -->
+        <nav class="  z-[99999] w-full pt-5  " id="topnav">
+            <!-- bg-white/5 px-10 -->
+            <div class=" max-w-7xl mx-auto ">
+                <div class="w-full flex flex-col lg:flex-row">
+                    <!-- Mobile Menu Button -->
+                    <div class="flex justify-between lg:hidden">
+                        <a href="#" class="flex items-center">
+                            <img class="w-12" src="assets/images/LOGO.SVG" alt="LOGO">
+                        </a>
+                        <button id="menu-btn"
+                            class="inline-flex items-center  text-[#a0a0a0] rounded-lg focus:outline-none">
+                            <svg id="svg-menu" class="w-10 h-10" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Menu / Menu_Alt_05">
+                                        <path id="vector" d="M5 17H13M5 12H19M11 7H19" stroke="#ffffff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </g>
+
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div id="mobile-menu"
+                        class="fixed top-0 left-0 w-full h-full bg-[#000] text-white transform -translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-center">
+                        <button id="close-btn" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+                        <ul class="space-y-6 text-center">
+                            <li><a href="index.html"
+                                    class="text-[#2196F3]  block py-2 text-[2rem] font-medium hover:bg-gray-700">الصفحة
+                                    الرئيسية</a>
+                            </li>
+                            <li><a href="index.html#about"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">حول</a></li>
+                            <li><a href="index.html#exp"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">الخبرات</a></li>
+                            <li><a href="index.html#projects"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">المشاريع</a></li>
+                            <li><a href="contact.html"
+                                    class="block  py-2 text-[2rem] font-medium hover:bg-gray-700">تواصل
+                                    معي</a></li>
+                        </ul>
+                    </div>
+                    <!-- Desktop Navigation -->
+                    <div class="hidden w-full lg:flex justify-between py-3" id="navbar">
+                        <ul class="flex lg:items-center gap-14 max-lg:mb-4 flex-col mt-4  md:mt-0 lg:flex-row">
+                            <li>
+                                <a href="index.html"
+                                    class="active-li text-lg text-[#a0a0a0] text-lg font-medium transition-all duration-500 block"
+                                    onclick="setActive(this)">الصفحة
+                                    الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href="#about"
+                                    class="text-[#a0a0a0] text-lg font-medium transition-all duration-500 block"
+                                    onclick="setActive(this)">حول</a>
+                            </li>
+                            <li>
+                                <a href="#exp"
+                                    class="text-[#a0a0a0] text-lg font-medium transition-all duration-500 block mb-lg-0"
+                                    onclick="setActive(this)">الخبرات</a>
+                            </li>
+                        </ul>
+
+                        <a href="https://pagedone.io/" class="hidden lg:flex items-center">
+                            <img src="assets/images/LOGO.SVG" class="w-12" alt="LOGO" srcset>
+                        </a>
+
+                        <div
+                            class="flex lg:items-center justify-start flex-col lg:flex-row max-lg:gap-4 lg:justify-end">
+                            <ul class="flex lg:items-center gap-14 max-lg:mb-4 flex-col mt-4  md:mt-0 lg:flex-row">
+                                <li>
+                                    <a href="#projects"
+                                        class="text-[#a0a0a0] text-lg font-medium transition-all duration-500 block"
+                                        onclick="setActive(this)">المشاريع</a>
+                                </li>
+                                <li>
+                                    <a href="#services"
+                                        class="text-[#a0a0a0] text-lg font-medium transition-all duration-500 block"
+                                        onclick="setActive(this)">الخدمات</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"
+                                        class="text-[#a0a0a0] text-lg font-medium transition-all duration-500 block mb-lg-0"
+                                        onclick="setActive(this)">تواصل
+                                        معي</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- STARS -->
+        <div class="stars"></div>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- HERO SECTION -->
+            <section class="my-16">
+                <div class="flex flex-col-reverse lg:flex-row items-start justify-between w-full gap-10">
+                    <div class="w-full lg:w-1/2 h-auto flex flex-col items-start gap-5">
+                        <h1 id="simpleUsage" dir="rtl" class="text-[2rem] md:text-[2.5rem] font-bold text-white"></h1>
+                        <h2 class="text-[1.5rem] text-[#a0a0a0]" id="title">
+                            مطور متكامل في مواقع وتطبيقات ويب احترافية
+                        </h2>
+                        <h2 class="text-[1.2rem] lg:text-[1.8rem] text-[#a0a0a0]" id="skills">
+                            FULL STACK <span class="text-[#2196F3] mb-10 px-2">|</span>
+                            FRONT-END
+                            <span class="text-[#2196F3] mb-10 px-2">|</span>
+                            BACK-END
+                        </h2>
+
+                        <span class="text-[1.1rem] text-[#a0a0a0]" id="desc">
+                            ابتكر مستقبل الويب مع حلول برمجية متطورة. متخصص
+                            في تطوير
+                            مواقع وتطبيقات ويب عالية الجودة، مع خبرة في
+                            تصميم الواجهات
+                            الديناميكية وبناء الأنظمة الخلفية القوية.
+                        </span>
+
+                        <div class="flex gap-5 mt-2">
+                            <div class="flex flex-col items-start gap-3">
+                                <span class="text-lg text-white" id="cv-text">السيرة الذاتية :</span>
+                                <div id="downloadBtn">
+                                    <a href="https://drive.google.com/file/d/1h5Yl4Zi4-kOglaUrAur-50s8fkOngtlD/view"
+                                        target="_blank" rel="noopener noreferrer"> <button type="button"
+                                            class=" opacity-100 py-2.5 px-6 text-md flex items-center gap-2 border-2 border-[#2196F3] rounded-lg shadow-md font-semibold text-[#2196F3] transition-all duration-500 hover:bg-[#2196F3] hover:text-white">
+                                            تحميل الملف
+                                            <svg class="svg-inline--fa fa-floppy-disk w-5 h-5" aria-hidden="true"
+                                                focusable="false" data-prefix="far" data-icon="floppy-disk" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M48 96V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V170.5c0-4.2-1.7-8.3-4.7-11.3l33.9-33.9c12 12 18.7 28.3 18.7 45.3V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H309.5c17 0 33.3 6.7 45.3 18.7l74.5 74.5-33.9 33.9L320.8 84.7c-.3-.3-.5-.5-.8-.8V184c0 13.3-10.7 24-24 24H104c-13.3 0-24-10.7-24-24V80H64c-8.8 0-16 7.2-16 16zm80-16v80H272V80H128zm32 240a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="w-full lg:w-1/2 flex flex-col items-center justify-center lg:items-end h-auto">
+                        <img id="heroImage" class="lg:w-[450px]" style="filter: blur(0.5px);"
+                            src="assets/images/MEHERO.svg" alt srcset>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="my-20 pt-20 mt-20">
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white ">من
+                        أنا ؟</h3>
+                    <span id="subtitle" class="text-[1.5rem] lg:text-[2rem] font-bold text-white mt-5">
+                        مطور و مصمم مواقع الكترونية
+                    </span>
+                    <span id="aboutText" class="text-[1.1rem] text-[#a0a0a0] mt-4">
+                        مرحبًا 👋، أنا يوسف من جمهورية مصر العربية، محافظة
+                        الدقهلية، مدينة المنصورة.
+                        لدي خبرة تزيد عن 2 عام في مجال تطوير المواقع
+                        الالكترونية، حيث أعمل على الواجهات باستخدام Blade
+                        دون الاعتماد على Vue.js، بينما لدي معرفة أساسية
+                        (Basic) بـ Vue.js.
+                        <br>
+                        مهاراتي تشمل:
+                        <br>
+                        - تطوير الواجهات باستخدام JavaScript، jQuery،
+                        Bootstrap، و Tailwind CSS. <br>
+                        - التعامل مع الحركات والأنيميشن باستخدام مكتبات مثل
+                        GSAP وأي مكتبة أنيميشن أخرى. <br>
+                        - تطوير الأنظمة الخلفية باستخدام PHP وإطار Laravel،
+                        مع إدارة قواعد البيانات عبر MySQL. <br>
+
+                        شغوف بتحسين تجربة المستخدم (UX) وتصميم الواجهات
+                        (UI)، وأسعى دائمًا لتطوير مهاراتي يومًا بعد يوم
+                        لأكون أفضل من الأمس!
+                    </span>
+                </div>
+            </section>
+
+            <!-- EXP SECTION -->
+            <section id="exp" class="my-20 pt-20 mt-20">
+                <div class="flex flex-col items-center justify-center gap-5">
+                    <h4 id="underline" class="expTitle text-[2rem] md:text-[2.5rem] font-bold text-white ">المسيرة
+                        المهنية</h4>
+
+                    <ol class="relative border-s border-gray-200 dark:border-gray-700 mt-20">
+                        <li class="mb-10 ms-6 exp-item">
+                            <span
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">كورس
+                                Full Stack في
+                                Createivo</h3>
+                            <time class="block mb-2 text-md font-normal leading-none text-[#a0a0a0] ">استمر
+                                لمدة 6 أشهر</time>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
+                                حصلت على تدريب مكثف ضمن برنامج احترافي
+                                متكامل في شركة <strong>Createivo</strong>،
+                                حيث
+                                اكتسبت مهارات تطوير الويب المتقدمة باستخدام
+                                أحدث التقنيات مثل
+                                <strong>PHP</strong>
+                                و<strong>Laravel</strong>
+                                و<strong>JavaScript</strong>. خلال هذه
+                                الفترة، تعلمت كيفية تطوير المشاريع البرمجية
+                                من الصفر وتحليل المتطلبات وبناء الأنظمة
+                                القابلة للتوسع.
+                                بعد إتمام التدريب بنجاح، تلقيت إشادة من
+                                المدربين وحصلت على تقدير خاص نتيجة التزامي
+                                وإتقاني للمهام، مما فتح لي الأبواب للعمل
+                                الحر على مشاريع مستقلة.
+                            </p>
+                        </li>
+
+                        <li class="mb-10 ms-6 exp-item">
+                            <span
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">الإشراف
+                                والتدريب في
+                                دورة Full Stack</h3>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
+                                بعد اجتيازي للدورة بتفوق، تم ترشيحي لدور
+                                إشرافي في تدريب الطلاب الجدد، حيث كنت
+                                مسؤولًا
+                                عن تقديم شروحات عملية حول
+                                <strong>PHP</strong>
+                                و<strong>Laravel</strong>
+                                بالإضافة إلى أساسيات قواعد البيانات وتصميم
+                                البرمجيات. خلال هذه التجربة، قمت بمساعدة
+                                الطلاب في حل المشكلات البرمجية، مما عزز
+                                مهاراتي في التواصل والتعليم التقني.
+                            </p>
+                        </li>
+
+                        <li class="mb-10 ms-6 exp-item">
+                            <span
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">Full
+                                Stack Developer في
+                                شركة GiantWhale</h3>
+                            <time class="block mb-2 text-md font-normal leading-none text-[#a0a0a0] ">عام
+                                2023</time>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
+                                حصلت على أول عقد عمل رسمي مع شركة
+                                <strong>GiantWhale</strong>، حيث كنت المسؤول
+                                الأول عن
+                                تطوير الويب في الشركة. تضمنت مسؤولياتي تصميم
+                                وتطوير
+                                <strong>أنظمة إدارة المحتوى</strong>، تحسين
+                                تجربة المستخدم، وتطبيق حلول متكاملة لبناء
+                                منصات مرنة وقابلة للتوسع.
+                                ساعدت في تحسين كفاءة النظام وتقليل وقت تحميل
+                                الصفحات بنسبة <strong>30%</strong>، مما عزز
+                                أداء المواقع وساهم في تحسين تجربة العملاء.
+                            </p>
+                        </li>
+
+                        <li class="mb-10 ms-6 exp-item">
+                            <span
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">التعاون
+                                مع شركة Motiv-X
+                            </h3>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
+                                بعد مغادرتي شركة
+                                <strong>GiantWhale</strong>، بدأت التعاون مع
+                                الشركة العربية-الألمانية
+                                <strong>Motiv-X</strong> كـ <strong>مطور ويب
+                                    مستقل</strong> بدوام جزئي.
+                                كانت مهامي تتضمن <strong>تحسين أداء
+                                    المواقع</strong>، تنفيذ ميزات جديدة،
+                                وتعديل قواعد
+                                البيانات والتصاميم لضمان تجربة مستخدم سلسة
+                                وسريعة.
+                                عملي في هذه الشركة أتاح لي فرصة التعامل مع
+                                فريق دولي وتطوير مهاراتي في العمل عن بُعد
+                                وإدارة المشاريع بكفاءة.
+                            </p>
+                        </li>
+
+                        <li class="mb-10 ms-6 exp-item">
+                            <span
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">مطور
+                                مواقع في شركة
+                                استشاراتي (الإماراتية)</h3>
+                            <time class="block mb-2 text-md font-normal leading-none text-[#a0a0a0] ">مدة
+                                3 أشهر</time>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
+                                تم التعاقد معي للعمل على تطوير وإدارة منصات
+                                الويب في شركة <strong>استشاراتي</strong>،
+                                حيث تعاونت مع فريق تقني متكامل لإطلاق عدة
+                                مشاريع ناجحة مثل:
+                            </p>
+                            <ul class="list-disc ms-6 text-[#a0a0a0] ">
+                                <li><strong>Party Wizard:</strong> منصة
+                                    تجارة إلكترونية مبتكرة لبيع المنتجات
+                                    والخدمات.
+                                </li>
+                                <li><strong>Moozway:</strong> موقع
+                                    <strong>Portfolio</strong> احترافي يعرض
+                                    أعمال العملاء
+                                    بطريقة أنيقة.</li>
+                                <li><strong>Estisahrati:</strong> نظام
+                                    متكامل لحجز الاستشارات وتنظيم الجلسات
+                                    عبر
+                                    الإنترنت.</li>
+                            </ul>
+                        </li>
+
+                        <li class="ms-6 exp-item">
+                            <span
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">العمل
+                                المستمر كمستقل
+                                (Freelancer)</h3>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
+                                بالإضافة إلى عملي مع الشركات، أواصل العمل
+                                كمطور ويب مستقل على مشاريع متعددة، حيث
+                                أستخدم
+                                <strong>Laravel</strong>،
+                                <strong>Vue.js</strong>، و<strong>Tailwind
+                                    CSS</strong>
+                                لإنشاء تطبيقات ويب احترافية. بفضل خبرتي،
+                                أستطيع تقديم حلول تقنية متكاملة تتناسب مع
+                                احتياجات العملاء، مما جعلني أكسب ثقة العديد
+                                من الشركات الناشئة ورجال الأعمال في بناء
+                                مشاريعهم الرقمية.
+                            </p>
+                        </li>
+                    </ol>
+
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section id="ski" class="my-20 pt-20 mt-20">
+                <div class="flex  flex-col items-center justify-center gap-3">
+                    <h3 id="underline" class=" text-[2rem] md:text-[2.5rem] font-bold text-white" dir="rtl">
+                        المهارات
+                        التقنية</h3>
+
+                    <div class="flex flex-wrap items-center justify-center gap-6 mt-10 ">
+                        <!-- HTML -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-12 h-12">
+                                    <path fill="#E34F26"
+                                        d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">HTML</div>
+                        </div>
+
+                        <!-- CSS -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-12 h-12">
+                                    <path fill="#1572B6"
+                                        d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">CSS</div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-12 h-12">
+                                    <path fill="#F7DF1E"
+                                        d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">JavaScript</div>
+                        </div>
+
+                        <!-- Bootstrap -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-12 h-12">
+                                    <path fill="#7952B3"
+                                        d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">Bootstrap</div>
+                        </div>
+
+                        <!-- Tailwind -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" class="w-12 h-12">
+                                    <g clip-path="url(#prefix__clip0)">
+                                        <path fill="#06B6D4" fill-rule="evenodd"
+                                            d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                                            clip-rule="evenodd" />
+                                    </g>
+                                    <defs>
+                                        <clippath id="prefix__clip0">
+                                            <path fill="#fff" d="M0 0h54v32.4H0z" />
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">Tailwind</div>
+                        </div>
+
+                        <!-- Vue.js -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.32 170.02" class="w-12 h-12">
+                                    <path fill="#42b883"
+                                        d="M120.83 0L98.16 39.26 75.49 0H0l98.16 170.02L196.32 0h-75.49z" />
+                                    <path fill="#35495e"
+                                        d="M120.83 0L98.16 39.26 75.49 0H39.26l58.9 102.01L157.06 0h-36.23z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">Vue.js</div>
+                        </div>
+
+                        <!-- Figma -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" class="w-12 h-12">
+                                    <path fill="#0ACF83"
+                                        d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z" />
+                                    <path fill="#A259FF"
+                                        d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z" />
+                                    <path fill="#F24E1E" d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z" />
+                                    <path fill="#FF7262" d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z" />
+                                    <path fill="#1ABCFE"
+                                        d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">Figma</div>
+                        </div>
+
+                        <!-- PHP -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 -61 256 256"
+                                    preserveAspectRatio="xMinYMin meet">
+
+                                    <g fill-rule="evenodd">
+
+                                        <ellipse fill="#8993BE" cx="128" cy="66.63" rx="128" ry="66.63" />
+
+                                        <path
+                                            d="M35.945 106.082l14.028-71.014H82.41c14.027.877 21.041 7.89 21.041 20.165 0 21.041-16.657 33.315-31.562 32.438H56.11l-3.507 18.411H35.945zm23.671-31.561L64 48.219h11.397c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.52zM100.192 87.671l14.027-71.013h16.658l-3.507 18.41h15.78c14.028.877 19.288 7.89 17.535 16.658l-6.137 35.945h-17.534l6.137-32.438c.876-4.384.876-7.014-5.26-7.014H124.74l-7.89 39.452h-16.658zM153.425 106.082l14.027-71.014h32.438c14.028.877 21.042 7.89 21.042 20.165 0 21.041-16.658 33.315-31.562 32.438h-15.781l-3.507 18.411h-16.657zm23.67-31.561l4.384-26.302h11.398c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.521z"
+                                            fill="#232531" />
+
+                                    </g>
+
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">PHP</div>
+                        </div>
+
+                        <!-- MySQL -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="w-12 h-12">
+                                    <path fill="#00618A"
+                                        d="M116.948 97.807c-6.863-.187-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.809 1.829 1.365 2.731 1.07 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.577 2.751 5.465 3.902 3.358 2.047 7.107 3.217 10.34 5.268 1.906 1.21 3.799 2.733 5.658 4.097.92.675 1.537 1.724 2.732 2.147v-.194c-.628-.8-.79-1.898-1.366-2.733l-2.537-2.537c-2.48-3.292-5.629-6.184-8.976-8.585-2.669-1.916-8.642-4.504-9.755-7.609l-.195-.195c1.892-.214 4.107-.898 5.854-1.367 2.934-.786 5.556-.583 8.585-1.365l4.097-1.171v-.78c-1.531-1.571-2.623-3.651-4.292-5.073-4.37-3.72-9.138-7.437-14.048-10.537-2.724-1.718-6.089-2.835-8.976-4.292-.971-.491-2.677-.746-3.318-1.562-1.517-1.932-2.342-4.382-3.511-6.633-2.449-4.717-4.854-9.868-7.024-14.831-1.48-3.384-2.447-6.72-4.293-9.756-8.86-14.567-18.396-23.358-33.169-32-3.144-1.838-6.929-2.563-10.929-3.513-2.145-.129-4.292-.26-6.438-.391-1.311-.546-2.673-2.149-3.902-2.927C17.811 4.565 5.257-2.16 1.633 6.682c-2.289 5.581 3.421 11.025 5.462 13.854 1.434 1.982 3.269 4.207 4.293 6.438.674 1.467.79 2.938 1.367 4.489 1.417 3.822 2.652 7.98 4.487 11.511.927 1.788 1.949 3.67 3.122 5.268.718.981 1.951 1.413 2.145 2.927-1.204 1.686-1.273 4.304-1.95 6.44-3.05 9.615-1.899 21.567 2.537 28.683 1.36 2.186 4.567 6.871 8.975 5.073 3.856-1.57 2.995-6.438 4.098-10.732.249-.973.096-1.689.585-2.341v.195l3.513 7.024c2.6 4.187 7.212 8.562 11.122 11.514 2.027 1.531 3.623 4.177 6.244 5.073v-.196h-.195c-.508-.791-1.303-1.119-1.951-1.755-1.527-1.497-3.225-3.358-4.487-5.073-3.556-4.827-6.698-10.11-9.561-15.609-1.368-2.627-2.557-5.523-3.709-8.196-.444-1.03-.438-2.589-1.364-3.122-1.263 1.958-3.122 3.542-4.098 5.854-1.561 3.696-1.762 8.204-2.341 12.878-.342.122-.19.038-.391.194-2.718-.655-3.672-3.452-4.683-5.853-2.554-6.07-3.029-15.842-.781-22.829.582-1.809 3.21-7.501 2.146-9.172-.508-1.666-2.184-2.63-3.121-3.903-1.161-1.574-2.319-3.646-3.124-5.464-2.09-4.731-3.066-10.044-5.267-14.828-1.053-2.287-2.832-4.602-4.293-6.634-1.617-2.253-3.429-3.912-4.683-6.635-.446-.968-1.051-2.518-.391-3.513.21-.671.508-.951 1.171-1.17 1.132-.873 4.284.29 5.462.779 3.129 1.3 5.741 2.538 8.392 4.294 1.271.844 2.559 2.475 4.097 2.927h1.756c2.747.631 5.824.195 8.391.975 4.536 1.378 8.601 3.523 12.292 5.854 11.246 7.102 20.442 17.21 26.732 29.269 1.012 1.942 1.45 3.794 2.341 5.854 1.798 4.153 4.063 8.426 5.852 12.488 1.786 4.052 3.526 8.141 6.05 11.513 1.327 1.772 6.451 2.723 8.781 3.708 1.632.689 4.307 1.409 5.854 2.34 2.953 1.782 5.815 3.903 8.586 5.855 1.383.975 5.64 3.116 5.852 4.879zM29.729 23.466c-1.431-.027-2.443.156-3.513.389v.195h.195c.683 1.402 1.888 2.306 2.731 3.513.65 1.367 1.301 2.732 1.952 4.097l.194-.193c1.209-.853 1.762-2.214 1.755-4.294-.484-.509-.555-1.147-.975-1.755-.556-.811-1.635-1.272-2.339-1.952z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">MySQL</div>
+                        </div>
+
+                        <!-- Laravel -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-12 h-12">
+                                    <path fill="#FF2D20"
+                                        d="M504.4,115.83a5.72,5.72,0,0,0-.28-.68,8.52,8.52,0,0,0-.53-1.25,6,6,0,0,0-.54-.71,9.36,9.36,0,0,0-.72-.94c-.23-.22-.52-.4-.77-.6a8.84,8.84,0,0,0-.9-.68L404.4,55.55a8,8,0,0,0-8,0L300.12,111h0a8.07,8.07,0,0,0-.88.69,7.68,7.68,0,0,0-.78.6,8.23,8.23,0,0,0-.72.93c-.17.24-.39.45-.54.71a9.7,9.7,0,0,0-.52,1.25c-.08.23-.21.44-.28.68a8.08,8.08,0,0,0-.28,2.08V223.18l-80.22,46.19V63.44a7.8,7.8,0,0,0-.28-2.09c-.06-.24-.2-.45-.28-.68a8.35,8.35,0,0,0-.52-1.24c-.14-.26-.37-.47-.54-.72a9.36,9.36,0,0,0-.72-.94,9.46,9.46,0,0,0-.78-.6,9.8,9.8,0,0,0-.88-.68h0L115.61,1.07a8,8,0,0,0-8,0L11.34,56.49h0a6.52,6.52,0,0,0-.88.69,7.81,7.81,0,0,0-.79.6,8.15,8.15,0,0,0-.71.93c-.18.25-.4.46-.55.72a7.88,7.88,0,0,0-.51,1.24,6.46,6.46,0,0,0-.29.67,8.18,8.18,0,0,0-.28,2.1v329.7a8,8,0,0,0,4,6.95l192.5,110.84a8.83,8.83,0,0,0,1.33.54,8.72,8.72,0,0,0,5.34,0,8.83,8.83,0,0,0,1.33-.54L404.4,500.09a8,8,0,0,0,4-6.95V287.88l92.24-53.11a8,8,0,0,0,4-7V117.92A8.63,8.63,0,0,0,504.4,115.83ZM111.6,17.28h0l80.19,46.15-80.2,46.18L31.41,63.44Zm88.25,60V278.6l-46.53,26.79-33.69,19.4V123.5l46.53-26.79Zm0,412.78L23.37,388.5V77.32L57.06,96.7l46.52,26.8V338.68a6.94,6.94,0,0,0,.12.9,8,8,0,0,0,.16,1.18h0a5.92,5.92,0,0,0,.38.9,6.38,6.38,0,0,0,.42,1v0a8.54,8.54,0,0,0,.6.78,7.62,7.62,0,0,0,.66.84l0,0c.23.22.52.38.77.58a8.93,8.93,0,0,0,.86.66l0,0,0,0,92.19,52.18Zm8-106.17-80.06-45.32,84.09-48.41,92.26-53.11,80.13,46.13-58.8,33.56Zm184.52,4.57L215.88,490.11V397.8L346.6,323.2l45.77-26.15Zm0-119.13L358.68,250l-46.53-26.79V131.79l33.69,19.4L392.37,178Zm8-105.28-80.2-46.17,80.2-46.16,80.18,46.15Zm8,105.28V178L455,151.19l33.68-19.4v91.39Z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">Laravel</div>
+                        </div>
+
+                        <!-- Git -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92" class="w-12 h-12">
+                                    <path fill="#F05133"
+                                        d="M90.156 41.965L50.036 1.848a5.918 5.918 0 00-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 017.23 1.684 7.034 7.034 0 011.667 7.282l10.187 10.184a7.028 7.028 0 017.278 1.672 7.04 7.04 0 010 9.957 7.05 7.05 0 01-9.965 0 7.044 7.044 0 01-1.528-7.648l-9.5-9.497V59.36a7.04 7.04 0 011.86 11.29 7.04 7.04 0 01-9.957 0 7.04 7.04 0 010-9.958 7.06 7.06 0 012.304-1.539V33.926a7.049 7.049 0 01-3.82-9.234L29.242 14.272 1.73 41.777a5.925 5.925 0 000 8.371L41.852 90.27a5.925 5.925 0 008.37 0l39.934-39.934a5.925 5.925 0 000-8.371" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">Git</div>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#a0a0a0]/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-12 h-12">
+                                    <path fill="#ffffff"
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">GitHub</div>
+                        </div>
+
+                        <!-- OOP -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-12 h-12">
+                                    <path fill="#4285F4"
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                                    <path fill="#4285F4"
+                                        d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">OOP</div>
+                        </div>
+
+                        <!-- AJAX -->
+                        <div
+                            class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/20">
+                            <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-12 h-12">
+                                    <path fill="#F44336"
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                                    <path fill="#F44336"
+                                        d="M4.93 10.93l1.41-1.41 1.41 1.41-1.41 1.41-1.41-1.41zm14.14 0l-1.41-1.41-1.41 1.41 1.41 1.41 1.41-1.41zM12 19.07V17h2v-2h-2v2h-2v2.07c-.34-.05-.68-.12-1-.23l-1 1.73c.65.17 1.32.28 2 .33V23h2v-2.1c.68-.05 1.35-.16 2-.33l-1-1.73c-.32.11-.66.18-1 .23z" />
+                                </svg>
+                            </div>
+                            <div class="text-white font-medium">AJAX</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects" class="my-20 pt-20 mt-20">
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white ">
+                        المشاريع </h3>
+                    <div
+                        class="flex justify-center my-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+
+                        <!-- IOU Project -->
+                        <div
+                            class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-5 border-[#2196F3] rounded-2xl p-5">
+                            <div class="flex items-center mb-6">
+                                <img src="assets/images/theiouprojectt.com_.png" alt="image"
+                                    class="rounded-lg w-full object-cover" style="height: 250px;">
+                            </div>
+                            <div class="block">
+                                <h4 class="text-gray-200 font-medium leading-8 description-line-clamp">
+                                    موقع <strong>IOU</strong> هو منصة
+                                    إلكترونية تم تطويرها باستخدام
+                                    <strong>Laravel</strong>.
+                                    يهدف الموقع إلى تمكين المستخدمين من
+                                    إرسال رسائل مخصصة إلى أشخاص معينين، مع
+                                    إمكانية
+                                    تحديد مجموعة من الخصائص والبيانات
+                                    المتعلقة بالرسالة.
+                                    يركز المشروع بشكل أساسي على التحقق من
+                                    صحة البيانات (Validation)، وآلية معالجة
+                                    المدخلات، بالإضافة إلى عرض المحتوى
+                                    بطريقة ديناميكية باستخدام Blade في
+                                    Laravel.
+                                </h4>
+                                <button class="text-md text-yellow-600 font-bold show-more mb-9 hover:scale-110">عرض
+                                    المزيد</button>
+
+                                <div class="flex items-center justify-between font-medium">
+                                    <span class="text-md text-indigo-600">
+                                        <button type="button"
+                                            class="py-2.5 px-6 text-md flex items-center gap-2 border-2 border-[#2196F3] rounded-lg shadow-md font-semibold text-[#2196F3] transition-all duration-500 hover:bg-[#2196F3] hover:text-white">
+                                            زيارة الموقع
+                                        </button>
+                                    </span>
+                                    <h6 class="text-md text-white">Iou
+                                        Project</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Emmar Project -->
+                        <div
+                            class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-5 border-[#2196F3] rounded-2xl p-5">
+                            <div class="flex items-center mb-6">
+                                <img src="assets/images/emaaralmsakin.com_.png" alt="Harsh image"
+                                    class="rounded-lg w-full object-cover" style="height: 250px;">
+                            </div>
+                            <div class="block">
+                                <h4 class="text-gray-200 font-medium leading-8  description-line-clamp">
+                                    موقع <strong>إعمار المساكن</strong> هو
+                                    منصة إلكترونية لشركة عقارات سعودية تم
+                                    تطويرها
+                                    باستخدام <strong>Laravel</strong> و
+                                    <strong>Tailwind</strong>.
+                                    يهدف الموقع إلى عرض تفاصيل العقارات
+                                    المتاحة، مع توفير نظام كامل لإدارة
+                                    العقارات يشمل
+                                    إمكانية العرض، الحذف، التعديل، والتقسيم.
+                                    كما يحتوي الموقع على نموذج بحث مع فلاتر
+                                    مخصصة لتسهيل عملية البحث.
+                                </h4>
+                                <button class="text-md text-yellow-600 font-bold show-more mb-9 hover:scale-110">عرض
+                                    المزيد</button>
+
+                                <div class="flex items-center justify-between font-medium">
+                                    <span class="text-md text-indigo-600">
+                                        <button type="button"
+                                            class="py-2.5 px-6 text-md flex items-center gap-2 border-2 border-[#2196F3] rounded-lg shadow-md font-semibold text-[#2196F3] transition-all duration-500 hover:bg-[#2196F3] hover:text-white">
+                                            زيارة الموقع
+                                        </button>
+                                    </span>
+                                    <h6 class="text-md text-white">Emmar
+                                        Project</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Party Wizard Project -->
+                        <div
+                            class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-5 border-[#2196F3] rounded-2xl p-5">
+                            <div class="flex items-center mb-6">
+                                <img src="assets/images/party.jpeg" alt="Harsh image"
+                                    class="rounded-lg w-full object-cover" style="height: 250px;">
+                            </div>
+                            <div class="block">
+                                <h4 class="text-gray-200 font-medium leading-8  description-line-clamp">
+                                    مشروع <strong>Party Wizard</strong> هو
+                                    متجر إلكتروني في الإمارات تم تطويره
+                                    باستخدام
+                                    <strong>Laravel</strong> و
+                                    <strong>Tailwind</strong>.
+                                    يختص المتجر ببيع الهدايا ويتميز بتصنيف
+                                    المنتجات ضمن <strong>Categories</strong>
+                                    متنوعة، كما يتيح للعملاء خيارات متعددة
+                                    للدفع مثل <strong>PayPal</strong> و
+                                    <strong>Stripe</strong>.
+                                    بالإضافة إلى ذلك، يحتوي المتجر على نظام
+                                    إدارة متكامل للمنتجات والمخزون، وواجهة
+                                    مستخدم ديناميكية تتيح تجربة تسوق مريحة
+                                    وسهلة.
+                                </h4>
+                                <button class="text-md text-yellow-600 font-bold show-more mb-9 hover:scale-110">عرض
+                                    المزيد</button>
+
+                                <div class="flex items-center justify-between font-medium">
+                                    <span class="text-md text-indigo-600">
+                                        <button type="button"
+                                            class="py-2.5 px-6 text-md flex items-center gap-2 border-2 border-[#2196F3] rounded-lg shadow-md font-semibold text-[#2196F3] transition-all duration-500 hover:bg-[#2196F3] hover:text-white">
+                                            زيارة الموقع
+                                        </button>
+                                    </span>
+                                    <h6 class="text-md text-white">Party
+                                        Wizard Project</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section id="services" class="my-20 pt-20 mt-20">
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white ">
+                        الخدمات
+                    </h3>
+                    <div
+                        class="flex-col justify-start items-start gap-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-10">
+
+                        <div
+                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
+                            <div class="flex-col justify-start items-start gap-4 inline-flex">
+                                <a href>
+                                    <img src="assets/images/code.png" class="w-10" alt srcset>
+                                </a>
+                                <h4 class="text-white text-lg font-semibold leading-8">تصميم
+                                    وتطوير المواقع الإلكترونية
+                                </h4>
+                                <p class="text-gray-50 text-md font-normal leading-snug">إنشاء
+                                    مواقع احترافية متجاوبة
+                                    باستخدام أحدث التقنيات مثل Laravel،
+                                    React، وTailwind.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-3 flex">
+                            <div class="flex-col justify-start items-start gap-4 inline-flex">
+                                <a href>
+                                    <img src="assets/images/app-development.png" class="w-10" alt srcset>
+
+                                </a>
+                                <h4 class="text-white text-lg font-semibold leading-8">تطوير
+                                    تطبيقات الهاتف المحمول</h4>
+                                <p class="text-gray-50 text-md font-normal leading-snug">برمجة
+                                    تطبيقات iOS و Android
+                                    باستخدام Flutter و React Native بأفضل
+                                    أداء وتجربة مستخدم.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
+                            <div class="flex-col justify-start items-start gap-4 inline-flex">
+                                <a href>
+                                    <img src="assets/images/ux-design.png" class="w-10" alt srcset>
+                                </a>
+                                <h4 class="text-white text-lg font-semibold leading-8">تصميم
+                                    UI/UX</h4>
+                                <p class="text-gray-50 text-md font-normal leading-snug">إنشاء
+                                    تصاميم احترافية وتجربة
+                                    مستخدم مميزة باستخدام Figma و Adobe
+                                    XD.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
+                            <div class="flex-col justify-start items-start gap-4 inline-flex">
+                                <a href>
+                                    <img src="assets/images/cms.png" class="w-10" alt srcset>
+
+                                </a>
+                                <h4 class="text-white text-lg font-semibold leading-8">تطوير
+                                    أنظمة إدارة المحتوى (CMS)
+                                </h4>
+                                <p class="text-gray-50 text-md font-normal leading-snug">تصميم
+                                    أنظمة مخصصة لإدارة
+                                    المحتوى بسهولة مثل ووردبريس وLaravel
+                                    Nova.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
+                            <div class="flex-col justify-start items-start gap-4 inline-flex">
+                                <a href>
+                                    <img src="assets/images/ecommerce.png" class="w-10" alt srcset>
+
+                                </a>
+                                <h4 class="text-white text-lg font-semibold leading-8">تطوير
+                                    المتاجر الإلكترونية</h4>
+                                <p class="text-gray-50 text-md font-normal leading-snug">إنشاء
+                                    متاجر إلكترونية متكاملة
+                                    تدعم بوابات الدفع مثل PayPal و
+                                    Stripe.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
+                            <div class="flex-col justify-start items-start gap-4 inline-flex">
+                                <a href>
+                                    <img src="assets/images/insurance.png" class="w-10" alt srcset>
+
+                                </a>
+                                <h4 class="text-white text-lg font-semibold leading-8">أمن
+                                    المعلومات وحماية البيانات
+                                </h4>
+                                <p class="text-gray-50 text-md font-normal leading-snug">تنفيذ
+                                    حلول حماية البيانات
+                                    والاختبار الأمني لتطبيقات الويب
+                                    والهاتف.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class=" m-4">
+                <div class="w-full max-w-screen-xl mx-auto  md:py-8">
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                        <a href="https://flowbite.com/"
+                            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                            <img src="assets/images/LOGO.svg" class="h-8" alt="Flowbite Logo" />
+                            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">يوسف
+                            </span>
+                        </a>
+                        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-300 sm:mb-0 ">
+                            <li>
+                                <a href="index.html" class="hover:underline me-4 md:me-6">الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="hover:underline me-4 md:me-6">تواصل
+                                    معي</a>
+                            </li>
+                            <li>
+                                <a href="index.html#exp" class="hover:underline me-4 md:me-6">الخبرات</a>
+                            </li>
+                            <li>
+                                <a href="index.html#projects" class="hover:underline">المشاريع</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                    <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                        <span class="block text-md text-[#a0a0a0] sm:text-center dark:text-gray-300">تصميم
+                            وتطوير / <span class="text-[#2196f3]">يوسف
+                                الصباحي</span> </span>
+                        <span class="block text-md text-[#a0a0a0] sm:text-center dark:text-gray-300">©
+                            2025 جميع الحقوق
+                            محفوظة</span>
+
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+        <!-- END CONTAINER -->
+        <!-- TOP -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!-- SOCIAL LINKS -->
+        <div class="relative">
+            <div class="fixed left-5 bottom-[50px] -translate-y-1/2" id="shareContainer">
+                <div id="socialIcons"
+                    class="absolute bottom-full mb-2 mr-1 flex flex-col items-center gap-2 transition-all duration-300 opacity-0 scale-95 pointer-events-none">
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/youssef-elsabbahy/" target="_blank">
+                        <button
+                            class="bg-blue-800 hover:bg-blue-900 text-white p-2 rounded-full transition-all duration-200 hover:scale-110 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </button>
+                    </a>
+
+                    <!-- Facebook Button -->
+                    <a href="https://www.facebook.com/share/15qzy9Acti/?mibextid=wwXIfr" target="_blank">
+                        <button
+                            class="bg-blue-600 text-white p-2 rounded-full transition-all duration-200 hover:scale-110 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </button>
+                    </a>
+                    <!-- GitHub Button -->
+                    <a href="https://github.com/youssefweb1" target="_blank">
+                        <button
+                            class="bg-[#fff] text-white p-2 rounded-full transition-all duration-200 hover:scale-110 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 -0.5 24 24"
+                                id="meteor-icon-kit__solid-github" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.2047 0.00001C6.56031 -0.005731 1.74628 4.08615 0.842541 9.6577C-0.061195 15.2293 3.2126 20.6331 8.56941 22.4118C9.14823 22.5177 9.35294 22.1577 9.35294 21.8541C9.35294 21.5506 9.35294 20.8588 9.35294 19.8988C6.14117 20.5977 5.46353 18.3529 5.46353 18.3529C5.25046 17.6572 4.79779 17.0595 4.18588 16.6659C3.14823 15.96 4.27059 15.96 4.27059 15.96C5.00761 16.0641 5.65578 16.5014 6.02823 17.1459C6.34368 17.7179 6.87393 18.1406 7.50179 18.3208C8.12965 18.5009 8.8034 18.4236 9.37411 18.1059C9.41842 17.5252 9.66876 16.9794 10.08 16.5671C7.5247 16.2777 4.84235 15.2894 4.84235 10.92C4.82481 9.7786 5.24688 8.67412 6.02117 7.8353C5.67632 6.84285 5.71662 5.7571 6.13412 4.79295C6.13412 4.79295 7.10117 4.48236 9.29647 5.97177C11.1816 5.45419 13.1713 5.45419 15.0565 5.97177C17.2518 4.48236 18.2118 4.79295 18.2118 4.79295C18.6351 5.74689 18.6854 6.82486 18.3529 7.81412C19.1272 8.65294 19.5493 9.7574 19.5318 10.8988C19.5318 15.3177 16.8424 16.2847 14.28 16.5459C14.8359 17.1047 15.1218 17.8774 15.0635 18.6635C15.0635 20.2024 15.0635 21.4447 15.0635 21.8188C15.0635 22.1929 15.2682 22.4824 15.8541 22.3694C21.1473 20.5447 24.3569 15.1728 23.4554 9.6469C22.5539 4.1211 17.8034 0.04779 12.2047 0.00001z"
+                                    fill="#758CA3" /></svg>
+                        </button>
+                    </a>
+
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/966582407507" target="_blank">
+                        <button
+                            class="bg-green-500 text-white p-2 rounded-full transition-all duration-200 hover:scale-110 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 32 32"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                    fill="#BFC8D0" />
+                                <path
+                                    d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                    fill="url(#paint0_linear_87_7264)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                    fill="white" />
+                                <path
+                                    d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#5BD066" />
+                                        <stop offset="1" stop-color="#27B43E" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </a>
+
+                </div>
+                <button id="shareButton"
+                    class="bg-[#2196f3] hover:bg-gradient hover:border border-[#2196f3] text-white p-3 rounded-full flex items-center justify-center transition-all duration-200 shadow-lg">
+                    <!-- Phone Icon (default) -->
+                    <svg id="phoneIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-phone">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <!-- X Icon (hidden initially) -->
+                    <svg id="xIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-x hidden">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGEDONE -->
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+    <!-- FLOWBITE -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- JQUERY -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <!-- TypeIt Animation -->
+    <script src="https://unpkg.com/typeit/dist/index.umd.js"></script>
+    <!-- JS FILE -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/top.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/des.js"></script>
+    <script src="assets/js/stars.js"></script>
+    <script src="assets/js/animationHome.js"></script>
+    <script src="assets/js/text.js"></script>
+   
+          
+</body>
+
+</html>

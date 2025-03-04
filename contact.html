@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- PAGEDONE -->
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet" />
+    <!-- FLOWBITE -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- FONTAWESOME -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' rel='stylesheet' />
+
+    <title>Youssef Portfolio - Web Developer</title>
+</head>
+
+<body>
+
+    <!-- CONTAINER -->
+    <div class="container mx-auto flex flex-col items-center justify-center px-6 lg:px-14 ">
+
+        <!-- HEADER -->
+        <nav class="  z-[99999] w-full pt-5  " id="topnav">
+            <!-- bg-white/5 px-10 -->
+            <div class=" max-w-7xl mx-auto ">
+                <div class="w-full flex flex-col lg:flex-row">
+                    <!-- Mobile Menu Button -->
+                    <div class="flex justify-between lg:hidden">
+                        <a href="#" class="flex items-center">
+                            <img class="w-12" src="assets/images/LOGO.SVG" alt="LOGO">
+                        </a>
+                        <button id="menu-btn"
+                            class="inline-flex items-center  text-gray-500 rounded-lg focus:outline-none">
+                            <svg id="svg-menu" class="w-10 h-10" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Menu / Menu_Alt_05">
+                                        <path id="vector" d="M5 17H13M5 12H19M11 7H19" stroke="#ffffff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </g>
+
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div id="mobile-menu"
+                        class="fixed top-0 left-0 w-full h-full bg-[#000] text-white transform -translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-center">
+                        <button id="close-btn" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+                        <ul class="space-y-6 text-center">
+                            <li><a href="index.html"
+                                    class="  block py-2 text-[2rem] font-medium hover:bg-gray-700">الصفحة
+                                    الرئيسية</a>
+                            </li>
+                            <li><a href="index.html#about"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">حول</a></li>
+                            <li><a href="index.html#exp"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">الخبرات</a></li>
+                            <li><a href="index.html#projects"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">المشاريع</a></li>
+                            <li><a href="contact.html"
+                                    class="text-[#2196F3] block  py-2 text-[2rem] font-medium hover:bg-gray-700">تواصل
+                                    معي</a></li>
+                        </ul>
+                    </div>
+                    <!-- Desktop Navigation -->
+                    <div class="hidden w-full lg:flex justify-between py-3" id="navbar">
+                        <ul class="flex lg:items-center gap-14 max-lg:mb-4 flex-col mt-4  md:mt-0 lg:flex-row">
+                            <li>
+                                <a href="index.html"
+                                    class=" text-lg text-gray-500 text-lg font-medium transition-all duration-500 block"
+                                    onclick="setActive(this)">الصفحة الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href="index.html#about"
+                                    class="text-gray-500 text-lg font-medium transition-all duration-500 block"
+                                    onclick="setActive(this)">حول</a>
+                            </li>
+                            <li>
+                                <a href="index.html#exp"
+                                    class="text-gray-500 text-lg font-medium transition-all duration-500 block mb-lg-0"
+                                    onclick="setActive(this)">الخبرات</a>
+                            </li>
+                        </ul>
+
+                        <a href="https://pagedone.io/" class="hidden lg:flex items-center">
+                            <img src="assets/images/LOGO.SVG" class="w-12" alt="LOGO" srcset>
+                        </a>
+
+                        <div
+                            class="flex lg:items-center justify-start flex-col lg:flex-row max-lg:gap-4 lg:justify-end">
+                            <ul class="flex lg:items-center gap-14 max-lg:mb-4 flex-col mt-4  md:mt-0 lg:flex-row">
+                                <li>
+                                    <a href="index.html#projects"
+                                        class="text-gray-500 text-lg font-medium transition-all duration-500 block"
+                                        onclick="setActive(this)">المشاريع</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#services"
+                                        class="text-gray-500 text-lg font-medium transition-all duration-500 block"
+                                        onclick="setActive(this)">الخدمات</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"
+                                        class="active-li text-gray-500 text-lg font-medium transition-all duration-500 block mb-lg-0"
+                                        onclick="setActive(this)">تواصل معي</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- STARS -->
+        <div class="stars"></div>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- CONTACT US -->
+            <section class="my-20  mt-10">
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <h3 id="underline" class="text-[2rem] mb-10 lg:mb-20 sm:text-[2.5rem] font-bold text-white"
+                        dir="rtl">
+                        تواصل معنا</h3>
+
+                    <div
+                        class="grid lg:grid-cols-2 grid-cols-1 gap-x-16 xl:gap-x-24  max-w-lg md:max-w-4xl lg:max-w-full mx-auto">
+                        <div>
+                            <span class="text-[1.1rem] text-[#fff]">
+                                أنا هنا لمساعدتك! إذا كان لديك أي استفسار أو
+                                ملاحظة أو طلب، فلا تتردد في التواصل معي،
+                                وسأكون سعيدًا بدعمك.
+                            </span>
+                            <div class="my-12 grid grid-cols-1 md:gap-x-8 gap-y-8 ">
+                                <div>
+                                    <a href="javascript:;"
+                                        class="w-14 h-14 bg-[#2196f3] rounded-full flex items-center justify-center mb-5 transition-all duration-500 group-hover:bg-white cursor-pointer">
+                                        <svg class="fill-white transition-all duration-500 group-hover:fill-[#2196f3]"
+                                            width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.84758 7.58462L4.63863 7.46524L4.63855 7.46473L3.84758 7.58462ZM23.693 27.4085L23.5227 28.1902L23.5232 28.1903L23.693 27.4085ZM24.3879 20.598L24.6727 19.8504L24.3879 20.598ZM10.8408 7.07147L10.0919 7.35301V7.35301L10.8408 7.07147ZM11.6654 10.4021L10.879 10.2555L11.6654 10.4021ZM11.535 8.91814L12.2839 8.6366L11.535 8.91814ZM11.2622 15.0393L11.9827 14.6915L11.2622 15.0393ZM11.0857 13.5119L11.8721 13.6585L11.0857 13.5119ZM18.0722 20.3301L17.92 19.5447L18.0722 20.3301ZM16.3099 20.069L15.9211 20.7682L16.3099 20.069ZM21.0165 19.7596L21.1687 20.545L21.0165 19.7596ZM22.5311 19.8906L22.2463 20.6382L22.5311 19.8906ZM18.8963 2.79564C18.4577 2.74255 18.0591 3.05509 18.006 3.49372C17.9529 3.93234 18.2654 4.33096 18.7041 4.38405L18.8963 2.79564ZM26.5498 12.1082C26.6098 12.546 27.0132 12.8523 27.4509 12.7923C27.8887 12.7324 28.195 12.329 28.135 11.8912L26.5498 12.1082ZM18.5736 7.39616C18.1349 7.34387 17.7369 7.65713 17.6846 8.09585C17.6323 8.53457 17.9455 8.93262 18.3843 8.98491L18.5736 7.39616ZM21.9524 12.4978C22.0116 12.9356 22.4144 13.2426 22.8523 13.1835C23.2901 13.1244 23.5972 12.7215 23.538 12.2836L21.9524 12.4978ZM20.8643 18.9742L17.92 19.5447L18.2244 21.1155L21.1687 20.545L20.8643 18.9742ZM16.6987 19.3699C14.4144 18.0995 12.9397 16.6739 11.9827 14.6915L10.5418 15.387C11.6752 17.7349 13.423 19.3789 15.9211 20.7682L16.6987 19.3699ZM11.8721 13.6585L12.4519 10.5487L10.879 10.2555L10.2992 13.3652L11.8721 13.6585ZM12.2839 8.6366L11.5896 6.78994L10.0919 7.35301L10.7862 9.19967L12.2839 8.6366ZM8.24537 4.4745H5.932V6.0745H8.24537V4.4745ZM5.932 4.4745C4.22338 4.4745 2.78466 5.91024 3.05662 7.70451L4.63855 7.46473C4.52906 6.74236 5.09463 6.0745 5.932 6.0745V4.4745ZM3.05654 7.704C3.53868 10.8987 4.97217 16.8037 9.24397 21.0755L10.3753 19.9441C6.46975 16.0385 5.10446 10.552 4.63863 7.46524L3.05654 7.704ZM9.24397 21.0755C13.7053 25.5368 20.0794 27.4401 23.5227 28.1902L23.8632 26.6269C20.4991 25.894 14.5022 24.0709 10.3753 19.9441L9.24397 21.0755ZM23.5232 28.1903C25.3821 28.594 26.9735 27.1319 26.9735 25.323H25.3735C25.3735 26.2068 24.6333 26.7941 23.8627 26.6268L23.5232 28.1903ZM26.9735 25.323V23.1891H25.3735V25.323H26.9735ZM24.6727 19.8504L22.816 19.143L22.2463 20.6382L24.1031 21.3456L24.6727 19.8504ZM26.9735 23.1891C26.9735 22.7447 26.9746 22.3461 26.938 22.0163C26.8991 21.6666 26.8117 21.3186 26.5874 20.9931L25.2699 21.901C25.2904 21.9307 25.3254 21.9915 25.3478 22.1929C25.3723 22.4141 25.3735 22.709 25.3735 23.1891H26.9735ZM24.1031 21.3456C24.5517 21.5165 24.8269 21.6226 25.0249 21.7243C25.2051 21.8169 25.2494 21.8712 25.2699 21.901L26.5874 20.9931C26.3631 20.6676 26.069 20.462 25.7561 20.3012C25.4609 20.1495 25.088 20.0087 24.6727 19.8504L24.1031 21.3456ZM11.5896 6.78994C11.4325 6.37206 11.2927 5.99701 11.1416 5.70004C10.9815 5.38519 10.7761 5.08922 10.4498 4.86331L9.53905 6.17878C9.56885 6.19941 9.62325 6.24403 9.71552 6.42544C9.81689 6.62473 9.92222 6.90162 10.0919 7.35301L11.5896 6.78994ZM8.24537 6.0745C8.7276 6.0745 9.02385 6.07565 9.24606 6.1004C9.44834 6.12293 9.50925 6.15814 9.53905 6.17878L10.4498 4.86331C10.1236 4.6374 9.77426 4.54934 9.42319 4.51023C9.09205 4.47335 8.6918 4.4745 8.24537 4.4745V6.0745ZM12.4519 10.5487C12.5145 10.2131 12.5798 9.89958 12.5514 9.57655L10.9575 9.71661C10.9624 9.77151 10.9573 9.83573 10.879 10.2555L12.4519 10.5487ZM10.7862 9.19967C10.9365 9.59936 10.9527 9.6617 10.9575 9.71661L12.5514 9.57655C12.523 9.25351 12.404 8.95621 12.2839 8.6366L10.7862 9.19967ZM11.9827 14.6915C11.8158 14.3457 11.8038 14.304 11.7945 14.2344L10.2085 14.4461C10.2579 14.8157 10.4002 15.0936 10.5418 15.387L11.9827 14.6915ZM10.2992 13.3652C10.2314 13.7288 10.1587 14.0724 10.2085 14.4461L11.7945 14.2344C11.7857 14.1687 11.7886 14.1065 11.8721 13.6585L10.2992 13.3652ZM17.92 19.5447C17.4 19.6455 17.3246 19.6491 17.2535 19.6378L17.0016 21.2179C17.414 21.2836 17.8072 21.1964 18.2244 21.1155L17.92 19.5447ZM15.9211 20.7682C16.2665 20.9602 16.5915 21.1525 17.0016 21.2179L17.2535 19.6378C17.1803 19.6261 17.1213 19.6048 16.6987 19.3699L15.9211 20.7682ZM21.1687 20.545C21.5971 20.4619 21.6627 20.4564 21.7188 20.4613L21.8567 18.8672C21.5267 18.8387 21.2068 18.9078 20.8643 18.9742L21.1687 20.545ZM22.816 19.143C22.49 19.0188 22.1867 18.8958 21.8567 18.8672L21.7188 20.4613C21.7748 20.4661 21.8385 20.4828 22.2463 20.6382L22.816 19.143ZM18.7041 4.38405C22.8983 4.8917 25.9767 7.92241 26.5498 12.1082L28.135 11.8912C27.4633 6.98479 23.8126 3.39069 18.8963 2.79564L18.7041 4.38405ZM18.3843 8.98491C20.2949 9.21265 21.6949 10.5909 21.9524 12.4978L23.538 12.2836C23.1828 9.65387 21.2086 7.71023 18.5736 7.39616L18.3843 8.98491Z"
+                                                fill />
+                                        </svg>
+                                    </a>
+                                    <h5
+                                        class="text-[#2196f3] text-xl font-semibold leading-8 mb-3 transition-all duration-500 group-hover:text-white">
+                                        معلومات
+                                        التواصل</h5>
+                                    <p
+                                        class="text-gray-200 text-lg font-normal leading-5 transition-all duration-500 group-hover:text-white">
+                                        رقم الهاتف :
+                                        <span class="font-bold underline">966582407507+</span>
+                                        <br>
+                                        <br>
+                                        البريد الالكتروني : <span
+                                            class="font-bold underline">yooooussef@yahoo.com</span> <br><br>
+                                        العنوان : <span class="font-bold ">المملكة العربية السعودية - الرياض</span>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <form action="https://api.web3forms.com/submit" method="POST"
+                            class="h-fit w-full max-w-lg md:max-w-3xl lg:max-w-full mx-auto text-right"
+                            onsubmit="setTimeout(() => this.reset(), 200)">
+                            <!-- Replace with your Access Key -->
+                            <input type="hidden" name="access_key" value="2abc227c-88da-447c-93ae-1b36d7fb7781">
+                            <div class="relative mb-8">
+                                <label
+                                    class="flex items-center mb-2 text-white text-base leading-6 font-medium">الاسم</label>
+                                <div class="relative text-gray-500 focus-within:text-white">
+                                    <input id="name" type="text" name="name" required
+                                        class="w-full block h-12 pl-5 pr-5 py-2.5 text-lg leading-7 font-normal shadow-xs text-white bg-transparent border border-[#2196f3] border-2 rounded-full placeholder-gray-400 focus:outline-none"
+                                        placeholder="أدخل اسمك">
+                                </div>
+                            </div>
+
+                            <div class="relative mb-8">
+                                <label class="flex items-center mb-2 text-white text-base leading-6 font-medium">البريد
+                                    الإلكتروني</label>
+                                <div class="relative text-gray-100 focus-within:text-gray-100">
+                                    <input type="email" name="email" required id="email"
+                                        class="w-full block h-12 pl-5 pr-5 py-2.5 text-lg leading-7 font-normal shadow-xs text-white bg-transparent border border-[#2196f3] border-2 rounded-full placeholder-gray-400 focus:outline-none"
+                                        placeholder="أدخل بريدك الإلكتروني">
+                                </div>
+                            </div>
+
+                            <div class="relative mb-8">
+                                <label
+                                    class="flex items-center mb-2 text-white text-base leading-6 font-medium">الرسالة</label>
+                                <div class="relative">
+                                    <textarea name="message" required
+                                        class="block w-full h-40 px-4 py-2.5 text-lg leading-7 font-normal shadow-xs text-white bg-transparent border border-[#2196f3] border-2 rounded-2xl placeholder-gray-400 focus:outline-none resize-none"
+                                        placeholder="اكتب رسالتك"></textarea>
+                                </div>
+                            </div>
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            <button type="submit"
+                                class="w-full h-12 rounded-full bg-[#2196f3] hover:bg-gradient shadow-sm text-white text-base font-semibold leading-6 flex items-center justify-center">
+                                إرسال الرسالة
+                                <svg style="transform: rotate(180deg);" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5 15L11.0858 11.4142C11.7525 10.7475 12.0858 10.4142 12.0858 10C12.0858 9.58579 11.7525 9.25245 11.0858 8.58579L7.5 5"
+                                        stroke="white" stroke-width="1.8" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+
+                    </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class=" m-4">
+                <div class="w-full max-w-screen-xl mx-auto  md:py-8">
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                        <a href="https://flowbite.com/"
+                            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                            <img src="assets/images/LOGO.svg" class="h-8" alt="Flowbite Logo" />
+                            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">يوسف
+                            </span>
+                        </a>
+                        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-300 sm:mb-0 ">
+                            <li>
+                                <a href="index.html" class="hover:underline me-4 md:me-6">الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="hover:underline me-4 md:me-6">تواصل
+                                    معي</a>
+                            </li>
+                            <li>
+                                <a href="index.html#exp" class="hover:underline me-4 md:me-6">الخبرات</a>
+                            </li>
+                            <li>
+                                <a href="index.html#projects" class="hover:underline">المشاريع</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                    <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-300">تصميم
+                            وتطوير / <span class="text-[#2196f3]">يوسف
+                                الصباحي</span> </span>
+                        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-300">©
+                            2025 جميع الحقوق
+                            محفوظة</span>
+
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+        <!-- TOP -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!-- SOCIAL LINKS -->
+        <div class="relative">
+            <div class="fixed left-5 bottom-[50px] -translate-y-1/2" id="shareContainer">
+                <div id="socialIcons"
+                    class="absolute bottom-full mb-2 mr-1 flex flex-col items-center gap-2 transition-all duration-300 opacity-0 scale-95 pointer-events-none">
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/youssef-elsabbahy/" target="_blank">
+                        <button
+                            class="bg-blue-800 hover:bg-blue-900 text-white p-2 rounded-full transition-all duration-200 hover:scale-110 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </button>
+                    </a>
+
+                    <!-- Facebook Button -->
+                    <a href="https://www.facebook.com/share/15qzy9Acti/?mibextid=wwXIfr" target="_blank">
+                        <button
+                            class="bg-blue-600 text-white p-2 rounded-full transition-all duration-200 hover:scale-110 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </button>
+                    </a>
+                    <!-- GitHub Button -->
+                    <a href="https://github.com/youssefweb1" target="_blank">
+                        <button
+                            class="bg-[#fff] text-white p-2 rounded-full transition-all duration-200 hover:scale-110 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 -0.5 24 24"
+                                id="meteor-icon-kit__solid-github" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.2047 0.00001C6.56031 -0.005731 1.74628 4.08615 0.842541 9.6577C-0.061195 15.2293 3.2126 20.6331 8.56941 22.4118C9.14823 22.5177 9.35294 22.1577 9.35294 21.8541C9.35294 21.5506 9.35294 20.8588 9.35294 19.8988C6.14117 20.5977 5.46353 18.3529 5.46353 18.3529C5.25046 17.6572 4.79779 17.0595 4.18588 16.6659C3.14823 15.96 4.27059 15.96 4.27059 15.96C5.00761 16.0641 5.65578 16.5014 6.02823 17.1459C6.34368 17.7179 6.87393 18.1406 7.50179 18.3208C8.12965 18.5009 8.8034 18.4236 9.37411 18.1059C9.41842 17.5252 9.66876 16.9794 10.08 16.5671C7.5247 16.2777 4.84235 15.2894 4.84235 10.92C4.82481 9.7786 5.24688 8.67412 6.02117 7.8353C5.67632 6.84285 5.71662 5.7571 6.13412 4.79295C6.13412 4.79295 7.10117 4.48236 9.29647 5.97177C11.1816 5.45419 13.1713 5.45419 15.0565 5.97177C17.2518 4.48236 18.2118 4.79295 18.2118 4.79295C18.6351 5.74689 18.6854 6.82486 18.3529 7.81412C19.1272 8.65294 19.5493 9.7574 19.5318 10.8988C19.5318 15.3177 16.8424 16.2847 14.28 16.5459C14.8359 17.1047 15.1218 17.8774 15.0635 18.6635C15.0635 20.2024 15.0635 21.4447 15.0635 21.8188C15.0635 22.1929 15.2682 22.4824 15.8541 22.3694C21.1473 20.5447 24.3569 15.1728 23.4554 9.6469C22.5539 4.1211 17.8034 0.04779 12.2047 0.00001z"
+                                    fill="#758CA3" /></svg>
+                        </button>
+                    </a>
+
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/966582407507" target="_blank">
+                        <button
+                            class="bg-green-500 text-white p-2 rounded-full transition-all duration-200 hover:scale-110 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 32 32"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                                    fill="#BFC8D0" />
+                                <path
+                                    d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                                    fill="url(#paint0_linear_87_7264)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                                    fill="white" />
+                                <path
+                                    d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#5BD066" />
+                                        <stop offset="1" stop-color="#27B43E" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </a>
+
+                </div>
+                <button id="shareButton"
+                    class="bg-[#2196f3] hover:bg-gradient hover:border border-[#2196f3] text-white p-3 rounded-full flex items-center justify-center transition-all duration-200 shadow-lg">
+                    <!-- Phone Icon (default) -->
+                    <svg id="phoneIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-phone">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <!-- X Icon (hidden initially) -->
+                    <svg id="xIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-x hidden">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGEDONE -->
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+    <!-- FLOWBITE -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- JQUERY -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- JS FILE -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/top.js"></script>
+    <script src="assets/js/gsap.js"></script>
+</body>
+
+</html>

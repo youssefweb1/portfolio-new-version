@@ -1,0 +1,261 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: black;
+  font-family: "Tajawal", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+section {
+  width: 100%;
+}
+.description-line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* Customize the entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Vertical scrollbar width */
+  height: 10px; /* Horizontal scrollbar height */
+}
+
+/* Customize the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background:rgba(13, 13, 13, 0.54); /* Background color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Customize the scrollbar thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+  background: #2196f3; /* Thumb color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Change the thumb color on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+
+/* navbar */
+.nav-active {
+  transition: background-color 0.3s ease;
+}
+.active-li {
+  color: #2196f3 !important;
+}
+.active-li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -7px;
+  left: 0;
+  background-color: #2196f3;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(1);
+  transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+
+#underline {
+  display: inline-block;
+  position: relative;
+}
+#underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -7px;
+  left: 0;
+  background-color: #2196f3;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(1);
+  transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+
+@media only screen and (min-width: 1023px) {
+  nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+
+  nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -7px;
+    left: 0;
+    background-color: #2196f3;
+    transition: transform 0.25s ease-out;
+  }
+
+  nav ul li a:hover {
+    color: #2196f3 !important;
+  }
+  nav ul li:hover::after {
+    transform: scaleX(1);
+  }
+
+  nav ul li::after {
+    transform-origin: bottom center;
+  }
+
+  nav ul li:hover::after {
+    transform-origin: bottom center;
+  }
+}
+
+
+/* animation stars*/
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: starAnimation var(--duration) linear var(--delay) infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes starAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0);
+  }
+
+  25% {
+    opacity: var(--star-opacity);
+  }
+
+  50% {
+    opacity: var(--star-opacity);
+    transform: translate(var(--move-x), var(--move-y)) scale(1);
+  }
+
+  75% {
+    opacity: var(--star-opacity);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(var(--final-x), var(--final-y)) scale(0);
+  }
+}
+
+/* top button */
+.progress-wrap {
+  position: fixed;
+  left: 20px;
+  bottom: 30px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  background-color: rgba(33, 149, 243, 0.18);
+}
+
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.progress-wrap::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+  text-align: center;
+  line-height: 46px;
+  font-size: 18px;
+  color: #fff;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.lightScrollIcon::after {
+  color: #ecedf3 !important;
+}
+
+.progress-wrap:hover::after {
+  opacity: 0.5;
+}
+
+.progress-wrap::before {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+  text-align: center;
+  line-height: 46px;
+  font-size: 18px;
+  opacity: 0;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.progress-wrap:hover::before {
+  opacity: 1;
+}
+
+.progress-wrap svg path {
+  fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+  stroke: #2196f3;
+  stroke-width: 5;
+  box-sizing: border-box;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
