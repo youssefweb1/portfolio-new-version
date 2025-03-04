@@ -23,6 +23,10 @@ section {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+#simpleUsage {
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 0 !important; /* التأكد من إزالة أي تباعد بين الحروف */
+}
 /* Customize the entire scrollbar */
 ::-webkit-scrollbar {
   width: 10px; /* Vertical scrollbar width */
