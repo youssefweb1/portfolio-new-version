@@ -71,21 +71,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     gsap.from("#subtitle", {
         opacity: 0,
-        y: 30,
-        duration: 1,
+        y: 100,
+        duration: 1.5,
+        stagger: 0.4,
         scrollTrigger: {
             trigger: "#about",
-            start: "top 80%",
+            start: "top 30%",
             ...scrollSettings
         }
     });
     gsap.from("#aboutText", {
         opacity: 0,
-        y: 20,
-        duration: 1,
+        y: 100,
+        duration: 1.5,
+        stagger: 0.4,
         scrollTrigger: {
             trigger: "#about",
-            start: "top 80%",
+            start: "top 30%",
             ...scrollSettings
         }
     });
