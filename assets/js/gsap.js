@@ -6,7 +6,7 @@ document.getElementById('menu-btn').addEventListener('click', function () {
         opacity: 0,
         x: -100, 
         duration: 1, 
-        stagger: 0.3, 
+        stagger: 0.2, 
         ease: "power3.out"
     });
 });

@@ -5,8 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- Favicon (For Browsers & Mobile) -->
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-512x512.png">
+
+    <!-- Apple Touch Icon (For iPhone & iPad) -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-180x180.png">
+
+    <!-- Android Chrome Icons -->
+    <link rel="manifest" href="https://youssefelsabbahi.vercel.app/manifest.json">
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -24,41 +39,42 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="الموقع الشخصي للمطور يوسف - مطوّر ويب متكامل (Full Stack) متخصص في Laravel، استعرض مهاراتي وأعمالي في تطوير الويب.">
+        content="الموقع الشخصي للمطور يوسف - مطوّر مواقع متكامل (Full Stack) متخصص في Laravel، استعرض مهاراتي وأعمالي في تطوير المواقع.">
     <meta name="keywords"
-        content="تطوير ويب, Laravel, مطور Full Stack, PHP, JavaScript, Tailwind, Flowbite, موقع شخصي, برمجة">
+        content="تطوير مواقع, Laravel, مطور Full Stack, PHP, JavaScript, Tailwind, Flowbite, موقع شخصي, برمجة">
     <meta name="author" content="يوسف">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0f172a">
 
     <!-- Open Graph (For Social Media Sharing) -->
-    <meta property="og:title" content="يوسف - مطور ويب">
+    <meta property="og:title" content="يوسف - مطور مواقع">
     <meta property="og:description"
-        content="مرحبًا بك في موقعي الشخصي! أنا مطوّر ويب متخصص في Laravel، أعمل على بناء مواقع احترافية باستخدام أحدث التقنيات.">
-    <meta property="og:image" content="assets/images/logo.png">
+        content="مرحبًا بك في موقعي الشخصي! أنا مطوّر مواقع متخصص في Laravel، أعمل على بناء مواقع احترافية باستخدام أحدث التقنيات.">
+    <meta property="og:image" content="https://youssefelsabbahi.vercel.app/assets/images/logo-1200x630.png">
+    <meta property="og:image:secure_url" content="https://youssefelsabbahi.vercel.app/assets/images/logo-1200x630.png">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="شعار يوسف - مطور مواقع">
     <meta property="og:url" content="https://youssefelsabbahi.vercel.app/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card (For Better Display on Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="يوسف - مطور ويب">
-    <meta name="twitter:description" content="اكتشف مهاراتي في تطوير الويب باستخدام Laravel و JavaScript والمزيد.">
-    <meta name="twitter:image" content="https://youssefelsabbahi.vercel.app/assets/images/logo.png">
+    <meta name="twitter:title" content="يوسف - مطور مواقع">
+    <meta name="twitter:description" content="اكتشف مهاراتي في تطوير المواقع باستخدام Laravel و JavaScript والمزيد.">
+    <meta name="twitter:image" content="https://youssefelsabbahi.vercel.app/assets/images/logo-1200x630.png">
+    <meta name="twitter:image:alt" content="شعار يوسف - مطور مواقع">
 
     <!-- Canonical URL (To Avoid Duplicate Content Issues) -->
     <link rel="canonical" href="https://youssefelsabbahi.vercel.app/">
 
-    <!-- Apple Touch Icon (For iPhone Home Screen) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://youssefelsabbahi.vercel.app/assets/images/logo.png">
-
-    <!-- iPhone Settings -->
+    <!-- iPhone & Android Settings -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="يوسف - مطور ويب">
+    <meta name="apple-mobile-web-app-title" content="يوسف - مطور مواقع">
 
-    <title>يوسف - مطور ويب متكامل</title>
+    <title>يوسف - مطور مواقع متكامل</title>
 </head>
 
 <body>
@@ -73,7 +89,7 @@
                 <div class="w-full flex flex-col lg:flex-row">
                     <!-- Mobile Menu Button -->
                     <div class="flex justify-between lg:hidden">
-                        <a href="#" class="flex items-center">
+                        <a href="index.html" class="flex items-center">
                             <img class="w-12" src="assets/images/logo.png" alt="LOGO">
                         </a>
                         <button id="menu-btn"
@@ -135,7 +151,7 @@
                             </li>
                         </ul>
 
-                        <a href="https://pagedone.io/" class="hidden lg:flex items-center">
+                        <a href="index.html" class="hidden lg:flex items-center">
                             <img src="assets/images/logo.png" class="w-12" alt="LOGO" srcset>
                         </a>
 
@@ -273,7 +289,7 @@
             <footer class=" m-4">
                 <div class="w-full max-w-screen-xl mx-auto  md:py-8">
                     <div class="sm:flex sm:items-center sm:justify-between">
-                        <a href="https://flowbite.com/"
+                        <a href="index.html"
                             class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                             <img src="assets/images/logo.png" class="h-8" alt="Flowbite Logo" />
                             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">يوسف

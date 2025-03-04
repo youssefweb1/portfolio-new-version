@@ -2,14 +2,28 @@
 <html lang="ar" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Favicon (For Browsers & Mobile) -->
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-512x512.png" />
+
+    <!-- Apple Touch Icon (For iPhone & iPad) -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://youssefelsabbahi.vercel.app/assets/images/logo-180x180.png" />
+
+    <!-- Android Chrome Icons -->
+    <link rel="manifest" href="https://youssefelsabbahi.vercel.app/manifest.json" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,66 +38,63 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="الموقع الشخصي للمطور يوسف - مطوّر ويب متكامل (Full Stack) متخصص في Laravel، استعرض مهاراتي وأعمالي في تطوير الويب.">
-    <meta name="keywords" content="تطوير ويب, Laravel, مطور Full Stack, PHP, JavaScript, Tailwind, Flowbite, موقع شخصي, برمجة">
-    <meta name="author" content="يوسف">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="description"
+        content="الموقع الشخصي للمطور يوسف - مطوّر مواقع متكامل (Full Stack) متخصص في Laravel، استعرض مهاراتي وأعمالي في تطوير المواقع." />
+    <meta name="keywords"
+        content="تطوير مواقع, Laravel, مطور Full Stack, PHP, JavaScript, Tailwind, Flowbite, موقع شخصي, برمجة" />
+    <meta name="author" content="يوسف" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
 
     <!-- Open Graph (For Social Media Sharing) -->
-    <meta property="og:title" content="يوسف - مطور ويب">
-    <meta property="og:description" content="مرحبًا بك في موقعي الشخصي! أنا مطوّر ويب متخصص في Laravel، أعمل على بناء مواقع احترافية باستخدام أحدث التقنيات.">
-    <meta property="og:image" content="assets/images/favicon.png">
-    <meta property="og:image:secure_url" content="assets/images/favicon.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="شعار يوسف - مطور ويب">
-    <meta property="og:url" content="https://youssefelsabbahi.vercel.app/">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="يوسف - مطور مواقع" />
+    <meta property="og:description"
+        content="مرحبًا بك في موقعي الشخصي! أنا مطوّر مواقع متخصص في Laravel، أعمل على بناء مواقع احترافية باستخدام أحدث التقنيات." />
+    <meta property="og:image" content="https://youssefelsabbahi.vercel.app/assets/images/logo-1200x630.png" />
+    <meta property="og:image:secure_url"
+        content="https://youssefelsabbahi.vercel.app/assets/images/logo-1200x630.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="شعار يوسف - مطور مواقع" />
+    <meta property="og:url" content="https://youssefelsabbahi.vercel.app/" />
+    <meta property="og:type" content="website" />
 
     <!-- Twitter Card (For Better Display on Twitter) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="يوسف - مطور ويب">
-    <meta name="twitter:description" content="اكتشف مهاراتي في تطوير الويب باستخدام Laravel و JavaScript والمزيد.">
-    <meta name="twitter:image" content="assets/images/favicon.png">
-    <meta name="twitter:image:alt" content="شعار يوسف - مطور ويب">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="يوسف - مطور مواقع" />
+    <meta name="twitter:description" content="اكتشف مهاراتي في تطوير المواقع باستخدام Laravel و JavaScript والمزيد." />
+    <meta name="twitter:image" content="https://youssefelsabbahi.vercel.app/assets/images/logo-1200x630.png" />
+    <meta name="twitter:image:alt" content="شعار يوسف - مطور مواقع" />
 
     <!-- Canonical URL (To Avoid Duplicate Content Issues) -->
-    <link rel="canonical" href="https://youssefelsabbahi.vercel.app/">
+    <link rel="canonical" href="https://youssefelsabbahi.vercel.app/" />
 
-    <!-- Apple Touch Icon (For iPhone Home Screen) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png">
+    <!-- iPhone & Android Settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="يوسف - مطور مواقع" />
 
-    <!-- iPhone Settings -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="يوسف - مطور ويب">
-
-    <title>يوسف - مطور ويب متكامل</title>
+    <title>يوسف - مطور مواقع متكامل</title>
 </head>
 
-
 <body>
-
     <!-- CONTAINER -->
-    <div class="container mx-auto flex flex-col items-center justify-center px-6 lg:px-14 ">
-
+    <div class="container mx-auto flex flex-col items-center justify-center px-6 lg:px-14">
         <!-- HEADER -->
-        <nav class="  z-[99999] w-full pt-5  " id="topnav">
+        <nav class="z-[99999] w-full pt-5" id="topnav">
             <!-- bg-white/5 px-10 -->
-            <div class=" max-w-7xl mx-auto ">
+            <div class="max-w-7xl mx-auto">
                 <div class="w-full flex flex-col lg:flex-row">
                     <!-- Mobile Menu Button -->
                     <div class="flex justify-between lg:hidden">
-                        <a href="#" class="flex items-center">
-                            <img class="w-12" src="assets/images/favicon.png" alt="LOGO">
+                        <a href="index.html" class="flex items-center">
+                            <img class="w-12" src="assets/images/favicon.png" alt="LOGO" />
                         </a>
                         <button id="menu-btn"
-                            class="inline-flex items-center  text-[#a0a0a0] rounded-lg focus:outline-none">
+                            class="inline-flex items-center text-[#a0a0a0] rounded-lg focus:outline-none">
                             <svg id="svg-menu" class="w-10 h-10" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
-
                                 <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -94,38 +105,46 @@
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </g>
                                 </g>
-
                             </svg>
                         </button>
                     </div>
 
                     <div id="mobile-menu"
                         class="fixed top-0 left-0 w-full h-full bg-[#000] text-white transform -translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-center">
-                        <button id="close-btn" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+                        <button id="close-btn" class="absolute top-4 right-4 text-white text-2xl">
+                            &times;
+                        </button>
                         <ul class="space-y-6 text-center">
-                            <li><a href="index.html"
-                                    class="text-[#2196F3]  block py-2 text-[2rem] font-medium hover:bg-gray-700">الصفحة
+                            <li>
+                                <a href="index.html"
+                                    class="text-[#2196F3] block py-2 text-[2rem] font-medium hover:bg-gray-700">الصفحة
                                     الرئيسية</a>
                             </li>
-                            <li><a href="index.html#about"
-                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">حول</a></li>
-                            <li><a href="index.html#exp"
-                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">الخبرات</a></li>
-                            <li><a href="index.html#projects"
-                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">المشاريع</a></li>
-                            <li><a href="contact.html"
-                                    class="block  py-2 text-[2rem] font-medium hover:bg-gray-700">تواصل
-                                    معي</a></li>
+                            <li>
+                                <a href="index.html#about"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">حول</a>
+                            </li>
+                            <li>
+                                <a href="index.html#exp"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">الخبرات</a>
+                            </li>
+                            <li>
+                                <a href="index.html#projects"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">المشاريع</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="block py-2 text-[2rem] font-medium hover:bg-gray-700">تواصل معي</a>
+                            </li>
                         </ul>
                     </div>
                     <!-- Desktop Navigation -->
                     <div class="hidden w-full lg:flex justify-between py-3" id="navbar">
-                        <ul class="flex lg:items-center gap-14 max-lg:mb-4 flex-col mt-4  md:mt-0 lg:flex-row">
+                        <ul class="flex lg:items-center gap-14 max-lg:mb-4 flex-col mt-4 md:mt-0 lg:flex-row">
                             <li>
                                 <a href="index.html"
                                     class="active-li text-lg text-[#a0a0a0] text-lg font-medium transition-all duration-500 block"
-                                    onclick="setActive(this)">الصفحة
-                                    الرئيسية</a>
+                                    onclick="setActive(this)">الصفحة الرئيسية</a>
                             </li>
                             <li>
                                 <a href="#about"
@@ -139,13 +158,13 @@
                             </li>
                         </ul>
 
-                        <a href="https://pagedone.io/" class="hidden lg:flex items-center">
-                            <img src="assets/images/favicon.png" class="w-12" alt="LOGO" srcset>
+                        <a href="index.html" class="hidden lg:flex items-center">
+                            <img src="assets/images/favicon.png" class="w-12" alt="LOGO" srcset />
                         </a>
 
                         <div
                             class="flex lg:items-center justify-start flex-col lg:flex-row max-lg:gap-4 lg:justify-end">
-                            <ul class="flex lg:items-center gap-14 max-lg:mb-4 flex-col mt-4  md:mt-0 lg:flex-row">
+                            <ul class="flex lg:items-center gap-14 max-lg:mb-4 flex-col mt-4 md:mt-0 lg:flex-row">
                                 <li>
                                     <a href="#projects"
                                         class="text-[#a0a0a0] text-lg font-medium transition-all duration-500 block"
@@ -159,12 +178,10 @@
                                 <li>
                                     <a href="contact.html"
                                         class="text-[#a0a0a0] text-lg font-medium transition-all duration-500 block mb-lg-0"
-                                        onclick="setActive(this)">تواصل
-                                        معي</a>
+                                        onclick="setActive(this)">تواصل معي</a>
                                 </li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -175,7 +192,6 @@
 
         <!-- MAIN CONTENT -->
         <main>
-
             <!-- HERO SECTION -->
             <section class="my-16">
                 <div class="flex flex-col-reverse lg:flex-row items-start justify-between w-full gap-10">
@@ -184,7 +200,7 @@
                             يوسف الصباحي
                         </h1>
                         <h2 class="text-[1.5rem] text-[#a0a0a0]" id="title">
-                            مطور متكامل في مواقع وتطبيقات ويب احترافية
+                            مطور متكامل في مواقع وتطبيقات مواقع احترافية
                         </h2>
                         <h2 class="text-[1.2rem] lg:text-[1.8rem] text-[#a0a0a0]" id="skills">
                             FULL STACK <span class="text-[#2196F3] mb-10 px-2">|</span>
@@ -194,10 +210,8 @@
                         </h2>
 
                         <span class="text-[1.1rem] text-[#a0a0a0]" id="desc">
-                            ابتكر مستقبل الويب مع حلول برمجية متطورة. متخصص
-                            في تطوير
-                            مواقع وتطبيقات ويب عالية الجودة، مع خبرة في
-                            تصميم الواجهات
+                            ابتكر مستقبل المواقع مع حلول برمجية متطورة. متخصص في تطوير مواقع
+                            وتطبيقات مواقع عالية الجودة، مع خبرة في تصميم الواجهات
                             الديناميكية وبناء الأنظمة الخلفية القوية.
                         </span>
 
@@ -206,8 +220,9 @@
                                 <span class="text-lg text-white" id="cv-text">السيرة الذاتية :</span>
                                 <div id="downloadBtn">
                                     <a href="https://drive.google.com/file/d/1egoLiqEBPZ0cVvbkOxWNlJT0LMq-PDf1/view?usp=sharing"
-                                        target="_blank" rel="noopener noreferrer"> <button type="button"
-                                            class=" opacity-100 py-2.5 px-6 text-md flex items-center gap-2 border-2 border-[#2196F3] rounded-lg shadow-md font-semibold text-[#2196F3] transition-all duration-500 hover:bg-[#2196F3] hover:text-white">
+                                        target="_blank" rel="noopener noreferrer">
+                                        <button type="button"
+                                            class="opacity-100 py-2.5 px-6 text-md flex items-center gap-2 border-2 border-[#2196F3] rounded-lg shadow-md font-semibold text-[#2196F3] transition-all duration-500 hover:bg-[#2196F3] hover:text-white">
                                             تحميل الملف
                                             <svg class="svg-inline--fa fa-floppy-disk w-5 h-5" aria-hidden="true"
                                                 focusable="false" data-prefix="far" data-icon="floppy-disk" role="img"
@@ -219,15 +234,14 @@
                                         </button>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
 
                     <!-- Image -->
                     <div class="w-full lg:w-1/2 flex flex-col items-center justify-center lg:items-end h-auto">
-                        <img id="heroImage" class="lg:w-[450px]" style="filter: blur(0.5px);"
-                            src="assets/images/MEHERO.svg" alt srcset>
+                        <img id="heroImage" class="lg:w-[450px]" style="filter: blur(0.5px)"
+                            src="assets/images/MEHERO.svg" alt srcset />
                     </div>
                 </div>
             </section>
@@ -235,31 +249,29 @@
             <!-- ABOUT SECTION -->
             <section id="about" class="my-20 pt-20 mt-20">
                 <div class="flex flex-col items-center justify-center gap-3">
-                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white ">من
-                        أنا ؟</h3>
+                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white">
+                        من أنا ؟
+                    </h3>
                     <span id="subtitle" class="text-[1.5rem] lg:text-[2rem] font-bold text-white mt-5">
                         مطور و مصمم مواقع الكترونية
                     </span>
                     <span id="aboutText" class="text-[1.1rem] text-[#a0a0a0] mt-4">
-                        مرحبًا 👋، أنا يوسف من جمهورية مصر العربية، محافظة
-                        الدقهلية، مدينة المنصورة.
-                        لدي خبرة تزيد عن 2 عام في مجال تطوير المواقع
-                        الالكترونية، حيث أعمل على الواجهات باستخدام Blade
-                        دون الاعتماد على Vue.js، بينما لدي معرفة أساسية
-                        (Basic) بـ Vue.js.
-                        <br>
+                        مرحبًا 👋، أنا يوسف من جمهورية مصر العربية، محافظة الدقهلية، مدينة
+                        المنصورة. لدي خبرة تزيد عن 2 عام في مجال تطوير المواقع
+                        الالكترونية، حيث أعمل على الواجهات باستخدام Blade دون الاعتماد على
+                        Vue.js، بينما لدي معرفة أساسية (Basic) بـ Vue.js.
+                        <br />
                         مهاراتي تشمل:
-                        <br>
-                        - تطوير الواجهات باستخدام JavaScript، jQuery،
-                        Bootstrap، و Tailwind CSS. <br>
-                        - التعامل مع الحركات والأنيميشن باستخدام مكتبات مثل
-                        GSAP وأي مكتبة أنيميشن أخرى. <br>
-                        - تطوير الأنظمة الخلفية باستخدام PHP وإطار Laravel،
-                        مع إدارة قواعد البيانات عبر MySQL. <br>
+                        <br />
+                        - تطوير الواجهات باستخدام JavaScript، jQuery، Bootstrap، و
+                        Tailwind CSS. <br />
+                        - التعامل مع الحركات والأنيميشن باستخدام مكتبات مثل GSAP وأي مكتبة
+                        أنيميشن أخرى. <br />
+                        - تطوير الأنظمة الخلفية باستخدام PHP وإطار Laravel، مع إدارة قواعد
+                        البيانات عبر MySQL. <br />
 
-                        شغوف بتحسين تجربة المستخدم (UX) وتصميم الواجهات
-                        (UI)، وأسعى دائمًا لتطوير مهاراتي يومًا بعد يوم
-                        لأكون أفضل من الأمس!
+                        شغوف بتحسين تجربة المستخدم (UX) وتصميم الواجهات (UI)، وأسعى دائمًا
+                        لتطوير مهاراتي يومًا بعد يوم لأكون أفضل من الأمس!
                     </span>
                 </div>
             </section>
@@ -267,166 +279,144 @@
             <!-- EXP SECTION -->
             <section id="exp" class="my-20 pt-20 mt-20">
                 <div class="flex flex-col items-center justify-center gap-5">
-                    <h4 id="underline" class="expTitle text-[2rem] md:text-[2.5rem] font-bold text-white ">المسيرة
-                        المهنية</h4>
+                    <h4 id="underline" class="expTitle text-[2rem] md:text-[2.5rem] font-bold text-white">
+                        المسيرة المهنية
+                    </h4>
 
                     <ol class="relative border-s border-gray-200 dark:border-gray-700 mt-20">
                         <li class="mb-10 ms-6 exp-item">
                             <span
-                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">كورس
-                                Full Stack في
-                                Createivo</h3>
-                            <time class="block mb-2 text-md font-normal leading-none text-[#a0a0a0] ">استمر
-                                لمدة 6 أشهر</time>
-                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
-                                حصلت على تدريب مكثف ضمن برنامج احترافي
-                                متكامل في شركة <strong>Createivo</strong>،
-                                حيث
-                                اكتسبت مهارات تطوير الويب المتقدمة باستخدام
-                                أحدث التقنيات مثل
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900"></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">
+                                كورس Full Stack في Createivo
+                            </h3>
+                            <time class="block mb-2 text-md font-normal leading-none text-[#a0a0a0]">استمر لمدة 6
+                                أشهر</time>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0]">
+                                حصلت على تدريب مكثف ضمن برنامج احترافي متكامل في شركة
+                                <strong>Createivo</strong>، حيث اكتسبت مهارات تطوير المواقع
+                                المتقدمة باستخدام أحدث التقنيات مثل
                                 <strong>PHP</strong>
                                 و<strong>Laravel</strong>
-                                و<strong>JavaScript</strong>. خلال هذه
-                                الفترة، تعلمت كيفية تطوير المشاريع البرمجية
-                                من الصفر وتحليل المتطلبات وبناء الأنظمة
-                                القابلة للتوسع.
-                                بعد إتمام التدريب بنجاح، تلقيت إشادة من
-                                المدربين وحصلت على تقدير خاص نتيجة التزامي
-                                وإتقاني للمهام، مما فتح لي الأبواب للعمل
-                                الحر على مشاريع مستقلة.
+                                و<strong>JavaScript</strong>. خلال هذه الفترة، تعلمت كيفية
+                                تطوير المشاريع البرمجية من الصفر وتحليل المتطلبات وبناء
+                                الأنظمة القابلة للتوسع. بعد إتمام التدريب بنجاح، تلقيت إشادة
+                                من المدربين وحصلت على تقدير خاص نتيجة التزامي وإتقاني للمهام،
+                                مما فتح لي الأبواب للعمل الحر على مشاريع مستقلة.
                             </p>
                         </li>
 
                         <li class="mb-10 ms-6 exp-item">
                             <span
-                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">الإشراف
-                                والتدريب في
-                                دورة Full Stack</h3>
-                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
-                                بعد اجتيازي للدورة بتفوق، تم ترشيحي لدور
-                                إشرافي في تدريب الطلاب الجدد، حيث كنت
-                                مسؤولًا
-                                عن تقديم شروحات عملية حول
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900"></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">
+                                الإشراف والتدريب في دورة Full Stack
+                            </h3>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0]">
+                                بعد اجتيازي للدورة بتفوق، تم ترشيحي لدور إشرافي في تدريب
+                                الطلاب الجدد، حيث كنت مسؤولًا عن تقديم شروحات عملية حول
                                 <strong>PHP</strong>
                                 و<strong>Laravel</strong>
-                                بالإضافة إلى أساسيات قواعد البيانات وتصميم
-                                البرمجيات. خلال هذه التجربة، قمت بمساعدة
-                                الطلاب في حل المشكلات البرمجية، مما عزز
+                                بالإضافة إلى أساسيات قواعد البيانات وتصميم البرمجيات. خلال هذه
+                                التجربة، قمت بمساعدة الطلاب في حل المشكلات البرمجية، مما عزز
                                 مهاراتي في التواصل والتعليم التقني.
                             </p>
                         </li>
 
                         <li class="mb-10 ms-6 exp-item">
                             <span
-                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">Full
-                                Stack Developer في
-                                شركة GiantWhale</h3>
-                            <time class="block mb-2 text-md font-normal leading-none text-[#a0a0a0] ">عام
-                                2023</time>
-                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
-                                حصلت على أول عقد عمل رسمي مع شركة
-                                <strong>GiantWhale</strong>، حيث كنت المسؤول
-                                الأول عن
-                                تطوير الويب في الشركة. تضمنت مسؤولياتي تصميم
-                                وتطوير
-                                <strong>أنظمة إدارة المحتوى</strong>، تحسين
-                                تجربة المستخدم، وتطبيق حلول متكاملة لبناء
-                                منصات مرنة وقابلة للتوسع.
-                                ساعدت في تحسين كفاءة النظام وتقليل وقت تحميل
-                                الصفحات بنسبة <strong>30%</strong>، مما عزز
-                                أداء المواقع وساهم في تحسين تجربة العملاء.
-                            </p>
-                        </li>
-
-                        <li class="mb-10 ms-6 exp-item">
-                            <span
-                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">التعاون
-                                مع شركة Motiv-X
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900"></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">
+                                Full Stack Developer في شركة GiantWhale
                             </h3>
-                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
-                                بعد مغادرتي شركة
-                                <strong>GiantWhale</strong>، بدأت التعاون مع
-                                الشركة العربية-الألمانية
-                                <strong>Motiv-X</strong> كـ <strong>مطور ويب
-                                    مستقل</strong> بدوام جزئي.
-                                كانت مهامي تتضمن <strong>تحسين أداء
-                                    المواقع</strong>، تنفيذ ميزات جديدة،
-                                وتعديل قواعد
-                                البيانات والتصاميم لضمان تجربة مستخدم سلسة
-                                وسريعة.
-                                عملي في هذه الشركة أتاح لي فرصة التعامل مع
-                                فريق دولي وتطوير مهاراتي في العمل عن بُعد
-                                وإدارة المشاريع بكفاءة.
+                            <time class="block mb-2 text-md font-normal leading-none text-[#a0a0a0]">عام 2023</time>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0]">
+                                حصلت على أول عقد عمل رسمي مع شركة
+                                <strong>GiantWhale</strong>، حيث كنت المسؤول الأول عن تطوير
+                                المواقع في الشركة. تضمنت مسؤولياتي تصميم وتطوير
+                                <strong>أنظمة إدارة المحتوى</strong>، تحسين تجربة المستخدم،
+                                وتطبيق حلول متكاملة لبناء منصات مرنة وقابلة للتوسع. ساعدت في
+                                تحسين كفاءة النظام وتقليل وقت تحميل الصفحات بنسبة
+                                <strong>30%</strong>، مما عزز أداء المواقع وساهم في تحسين
+                                تجربة العملاء.
                             </p>
                         </li>
 
                         <li class="mb-10 ms-6 exp-item">
                             <span
-                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">مطور
-                                مواقع في شركة
-                                استشاراتي (الإماراتية)</h3>
-                            <time class="block mb-2 text-md font-normal leading-none text-[#a0a0a0] ">مدة
-                                3 أشهر</time>
-                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
-                                تم التعاقد معي للعمل على تطوير وإدارة منصات
-                                الويب في شركة <strong>استشاراتي</strong>،
-                                حيث تعاونت مع فريق تقني متكامل لإطلاق عدة
-                                مشاريع ناجحة مثل:
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900"></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">
+                                التعاون مع شركة Motiv-X
+                            </h3>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0]">
+                                بعد مغادرتي شركة
+                                <strong>GiantWhale</strong>، بدأت التعاون مع الشركة
+                                العربية-الألمانية <strong>Motiv-X</strong> كـ
+                                <strong>مطور مواقع مستقل</strong> بدوام جزئي. كانت مهامي تتضمن
+                                <strong>تحسين أداء المواقع</strong>، تنفيذ ميزات جديدة، وتعديل
+                                قواعد البيانات والتصاميم لضمان تجربة مستخدم سلسة وسريعة. عملي
+                                في هذه الشركة أتاح لي فرصة التعامل مع فريق دولي وتطوير مهاراتي
+                                في العمل عن بُعد وإدارة المشاريع بكفاءة.
                             </p>
-                            <ul class="list-disc ms-6 text-[#a0a0a0] ">
-                                <li><strong>Party Wizard:</strong> منصة
-                                    تجارة إلكترونية مبتكرة لبيع المنتجات
-                                    والخدمات.
+                        </li>
+
+                        <li class="mb-10 ms-6 exp-item">
+                            <span
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900"></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">
+                                مطور مواقع في شركة استشاراتي (الإماراتية)
+                            </h3>
+                            <time class="block mb-2 text-md font-normal leading-none text-[#a0a0a0]">مدة 3 أشهر</time>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0]">
+                                تم التعاقد معي للعمل على تطوير وإدارة منصات المواقع في شركة
+                                <strong>استشاراتي</strong>، حيث تعاونت مع فريق تقني متكامل
+                                لإطلاق عدة مشاريع ناجحة مثل:
+                            </p>
+                            <ul class="list-disc ms-6 text-[#a0a0a0]">
+                                <li>
+                                    <strong>Party Wizard:</strong> منصة تجارة إلكترونية مبتكرة
+                                    لبيع المنتجات والخدمات.
                                 </li>
-                                <li><strong>Moozway:</strong> موقع
-                                    <strong>Portfolio</strong> احترافي يعرض
-                                    أعمال العملاء
-                                    بطريقة أنيقة.</li>
-                                <li><strong>Estisahrati:</strong> نظام
-                                    متكامل لحجز الاستشارات وتنظيم الجلسات
-                                    عبر
-                                    الإنترنت.</li>
+                                <li>
+                                    <strong>Moozway:</strong> موقع
+                                    <strong>Portfolio</strong> احترافي يعرض أعمال العملاء بطريقة
+                                    أنيقة.
+                                </li>
+                                <li>
+                                    <strong>Estisahrati:</strong> نظام متكامل لحجز الاستشارات
+                                    وتنظيم الجلسات عبر الإنترنت.
+                                </li>
                             </ul>
                         </li>
 
                         <li class="ms-6 exp-item">
                             <span
-                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 "></span>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">العمل
-                                المستمر كمستقل
-                                (Freelancer)</h3>
-                            <p class="text-[1.1rem] font-normal text-[#a0a0a0] ">
-                                بالإضافة إلى عملي مع الشركات، أواصل العمل
-                                كمطور ويب مستقل على مشاريع متعددة، حيث
-                                أستخدم
-                                <strong>Laravel</strong>،
-                                <strong>Vue.js</strong>، و<strong>Tailwind
-                                    CSS</strong>
-                                لإنشاء تطبيقات ويب احترافية. بفضل خبرتي،
-                                أستطيع تقديم حلول تقنية متكاملة تتناسب مع
-                                احتياجات العملاء، مما جعلني أكسب ثقة العديد
-                                من الشركات الناشئة ورجال الأعمال في بناء
-                                مشاريعهم الرقمية.
+                                class="absolute flex items-center justify-center w-6 h-6 bg-[#2196F3] rounded-full -start-3 ring-8 ring-white dark:ring-gray-900"></span>
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white mr-6">
+                                العمل المستمر كمستقل (Freelancer)
+                            </h3>
+                            <p class="text-[1.1rem] font-normal text-[#a0a0a0]">
+                                بالإضافة إلى عملي مع الشركات، أواصل العمل كمطور مواقع مستقل
+                                على مشاريع متعددة، حيث أستخدم
+                                <strong>Laravel</strong>، <strong>Vue.js</strong>، و<strong>Tailwind CSS</strong>
+                                لإنشاء تطبيقات مواقع احترافية. بفضل خبرتي، أستطيع تقديم حلول
+                                تقنية متكاملة تتناسب مع احتياجات العملاء، مما جعلني أكسب ثقة
+                                العديد من الشركات الناشئة ورجال الأعمال في بناء مشاريعهم
+                                الرقمية.
                             </p>
                         </li>
                     </ol>
-
                 </div>
             </section>
 
             <!-- SKILLS SECTION -->
             <section id="ski" class="my-20 pt-20 mt-20">
-                <div class="flex  flex-col items-center justify-center gap-3">
-                    <h3 id="underline" class=" text-[2rem] md:text-[2.5rem] font-bold text-white" dir="rtl">
-                        المهارات
-                        التقنية</h3>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white" dir="rtl">
+                        المهارات التقنية
+                    </h3>
 
-                    <div class="flex flex-wrap items-center justify-center gap-6 mt-10 ">
+                    <div class="flex flex-wrap items-center justify-center gap-6 mt-10">
                         <!-- HTML -->
                         <div
                             class="skillsBox flex flex-col items-center p-5 bg-white/5 backdrop-blur-md rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20">
@@ -533,17 +523,13 @@
                             <div class="w-16 h-16 mb-4 flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 -61 256 256"
                                     preserveAspectRatio="xMinYMin meet">
-
                                     <g fill-rule="evenodd">
-
                                         <ellipse fill="#8993BE" cx="128" cy="66.63" rx="128" ry="66.63" />
 
                                         <path
                                             d="M35.945 106.082l14.028-71.014H82.41c14.027.877 21.041 7.89 21.041 20.165 0 21.041-16.657 33.315-31.562 32.438H56.11l-3.507 18.411H35.945zm23.671-31.561L64 48.219h11.397c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.52zM100.192 87.671l14.027-71.013h16.658l-3.507 18.41h15.78c14.028.877 19.288 7.89 17.535 16.658l-6.137 35.945h-17.534l6.137-32.438c.876-4.384.876-7.014-5.26-7.014H124.74l-7.89 39.452h-16.658zM153.425 106.082l14.027-71.014h32.438c14.028.877 21.042 7.89 21.042 20.165 0 21.041-16.658 33.315-31.562 32.438h-15.781l-3.507 18.411h-16.657zm23.67-31.561l4.384-26.302h11.398c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.521z"
                                             fill="#232531" />
-
                                     </g>
-
                                 </svg>
                             </div>
                             <div class="text-white font-medium">PHP</div>
@@ -624,45 +610,38 @@
                             </div>
                             <div class="text-white font-medium">AJAX</div>
                         </div>
-
                     </div>
-
                 </div>
             </section>
 
             <!-- PROJECTS SECTION -->
             <section id="projects" class="my-20 pt-20 mt-20">
                 <div class="flex flex-col items-center justify-center gap-3">
-                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white ">
-                        المشاريع </h3>
+                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white">
+                        المشاريع
+                    </h3>
                     <div
                         class="flex justify-center my-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
-
                         <!-- IOU Project -->
                         <div
                             class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-5 border-[#2196F3] rounded-2xl p-5">
                             <div class="flex items-center mb-6">
                                 <img src="assets/images/theiouprojectt.com_.png" alt="image"
-                                    class="rounded-lg w-full object-cover" style="height: 250px;">
+                                    class="rounded-lg w-full object-cover" style="height: 250px" />
                             </div>
                             <div class="block">
                                 <h4 class="text-gray-200 font-medium leading-8 description-line-clamp">
-                                    موقع <strong>IOU</strong> هو منصة
-                                    إلكترونية تم تطويرها باستخدام
-                                    <strong>Laravel</strong>.
-                                    يهدف الموقع إلى تمكين المستخدمين من
-                                    إرسال رسائل مخصصة إلى أشخاص معينين، مع
-                                    إمكانية
-                                    تحديد مجموعة من الخصائص والبيانات
-                                    المتعلقة بالرسالة.
-                                    يركز المشروع بشكل أساسي على التحقق من
-                                    صحة البيانات (Validation)، وآلية معالجة
-                                    المدخلات، بالإضافة إلى عرض المحتوى
-                                    بطريقة ديناميكية باستخدام Blade في
-                                    Laravel.
+                                    موقع <strong>IOU</strong> هو منصة إلكترونية تم تطويرها
+                                    باستخدام <strong>Laravel</strong>. يهدف الموقع إلى تمكين
+                                    المستخدمين من إرسال رسائل مخصصة إلى أشخاص معينين، مع إمكانية
+                                    تحديد مجموعة من الخصائص والبيانات المتعلقة بالرسالة. يركز
+                                    المشروع بشكل أساسي على التحقق من صحة البيانات (Validation)،
+                                    وآلية معالجة المدخلات، بالإضافة إلى عرض المحتوى بطريقة
+                                    ديناميكية باستخدام Blade في Laravel.
                                 </h4>
-                                <button class="text-md text-yellow-600 font-bold show-more mb-9 hover:scale-110">عرض
-                                    المزيد</button>
+                                <button class="text-md text-yellow-600 font-bold show-more mb-9 hover:scale-110">
+                                    عرض المزيد
+                                </button>
 
                                 <div class="flex items-center justify-between font-medium">
                                     <span class="text-md text-indigo-600">
@@ -671,10 +650,8 @@
                                             زيارة الموقع
                                         </button>
                                     </span>
-                                    <h6 class="text-md text-white">Iou
-                                        Project</h6>
+                                    <h6 class="text-md text-white">Iou Project</h6>
                                 </div>
-
                             </div>
                         </div>
 
@@ -683,24 +660,20 @@
                             class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-5 border-[#2196F3] rounded-2xl p-5">
                             <div class="flex items-center mb-6">
                                 <img src="assets/images/emaaralmsakin.com_.png" alt="Harsh image"
-                                    class="rounded-lg w-full object-cover" style="height: 250px;">
+                                    class="rounded-lg w-full object-cover" style="height: 250px" />
                             </div>
                             <div class="block">
-                                <h4 class="text-gray-200 font-medium leading-8  description-line-clamp">
-                                    موقع <strong>إعمار المساكن</strong> هو
-                                    منصة إلكترونية لشركة عقارات سعودية تم
-                                    تطويرها
-                                    باستخدام <strong>Laravel</strong> و
-                                    <strong>Tailwind</strong>.
-                                    يهدف الموقع إلى عرض تفاصيل العقارات
-                                    المتاحة، مع توفير نظام كامل لإدارة
-                                    العقارات يشمل
-                                    إمكانية العرض، الحذف، التعديل، والتقسيم.
-                                    كما يحتوي الموقع على نموذج بحث مع فلاتر
-                                    مخصصة لتسهيل عملية البحث.
+                                <h4 class="text-gray-200 font-medium leading-8 description-line-clamp">
+                                    موقع <strong>إعمار المساكن</strong> هو منصة إلكترونية لشركة
+                                    عقارات سعودية تم تطويرها باستخدام <strong>Laravel</strong> و
+                                    <strong>Tailwind</strong>. يهدف الموقع إلى عرض تفاصيل
+                                    العقارات المتاحة، مع توفير نظام كامل لإدارة العقارات يشمل
+                                    إمكانية العرض، الحذف، التعديل، والتقسيم. كما يحتوي الموقع
+                                    على نموذج بحث مع فلاتر مخصصة لتسهيل عملية البحث.
                                 </h4>
-                                <button class="text-md text-yellow-600 font-bold show-more mb-9 hover:scale-110">عرض
-                                    المزيد</button>
+                                <button class="text-md text-yellow-600 font-bold show-more mb-9 hover:scale-110">
+                                    عرض المزيد
+                                </button>
 
                                 <div class="flex items-center justify-between font-medium">
                                     <span class="text-md text-indigo-600">
@@ -709,10 +682,8 @@
                                             زيارة الموقع
                                         </button>
                                     </span>
-                                    <h6 class="text-md text-white">Emmar
-                                        Project</h6>
+                                    <h6 class="text-md text-white">Emmar Project</h6>
                                 </div>
-
                             </div>
                         </div>
 
@@ -721,27 +692,23 @@
                             class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-5 border-[#2196F3] rounded-2xl p-5">
                             <div class="flex items-center mb-6">
                                 <img src="assets/images/party.jpeg" alt="Harsh image"
-                                    class="rounded-lg w-full object-cover" style="height: 250px;">
+                                    class="rounded-lg w-full object-cover" style="height: 250px" />
                             </div>
                             <div class="block">
-                                <h4 class="text-gray-200 font-medium leading-8  description-line-clamp">
-                                    مشروع <strong>Party Wizard</strong> هو
-                                    متجر إلكتروني في الإمارات تم تطويره
-                                    باستخدام
-                                    <strong>Laravel</strong> و
-                                    <strong>Tailwind</strong>.
-                                    يختص المتجر ببيع الهدايا ويتميز بتصنيف
-                                    المنتجات ضمن <strong>Categories</strong>
-                                    متنوعة، كما يتيح للعملاء خيارات متعددة
-                                    للدفع مثل <strong>PayPal</strong> و
-                                    <strong>Stripe</strong>.
-                                    بالإضافة إلى ذلك، يحتوي المتجر على نظام
-                                    إدارة متكامل للمنتجات والمخزون، وواجهة
-                                    مستخدم ديناميكية تتيح تجربة تسوق مريحة
+                                <h4 class="text-gray-200 font-medium leading-8 description-line-clamp">
+                                    مشروع <strong>Party Wizard</strong> هو متجر إلكتروني في
+                                    الإمارات تم تطويره باستخدام <strong>Laravel</strong> و
+                                    <strong>Tailwind</strong>. يختص المتجر ببيع الهدايا ويتميز
+                                    بتصنيف المنتجات ضمن <strong>Categories</strong> متنوعة، كما
+                                    يتيح للعملاء خيارات متعددة للدفع مثل
+                                    <strong>PayPal</strong> و <strong>Stripe</strong>. بالإضافة
+                                    إلى ذلك، يحتوي المتجر على نظام إدارة متكامل للمنتجات
+                                    والمخزون، وواجهة مستخدم ديناميكية تتيح تجربة تسوق مريحة
                                     وسهلة.
                                 </h4>
-                                <button class="text-md text-yellow-600 font-bold show-more mb-9 hover:scale-110">عرض
-                                    المزيد</button>
+                                <button class="text-md text-yellow-600 font-bold show-more mb-9 hover:scale-110">
+                                    عرض المزيد
+                                </button>
 
                                 <div class="flex items-center justify-between font-medium">
                                     <span class="text-md text-indigo-600">
@@ -750,13 +717,10 @@
                                             زيارة الموقع
                                         </button>
                                     </span>
-                                    <h6 class="text-md text-white">Party
-                                        Wizard Project</h6>
+                                    <h6 class="text-md text-white">Party Wizard Project</h6>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -764,25 +728,24 @@
             <!-- SERVICES SECTION -->
             <section id="services" class="my-20 pt-20 mt-20">
                 <div class="flex flex-col items-center justify-center gap-3">
-                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white ">
+                    <h3 id="underline" class="text-[2rem] md:text-[2.5rem] font-bold text-white">
                         الخدمات
                     </h3>
                     <div
                         class="flex-col justify-start items-start gap-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-10">
-
                         <div
                             class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
                             <div class="flex-col justify-start items-start gap-4 inline-flex">
                                 <a href>
-                                    <img src="assets/images/code.png" class="w-10" alt srcset>
+                                    <img src="assets/images/code.png" class="w-10" alt srcset />
                                 </a>
-                                <h4 class="text-white text-lg font-semibold leading-8">تصميم
-                                    وتطوير المواقع الإلكترونية
+                                <h4 class="text-white text-lg font-semibold leading-8">
+                                    تصميم وتطوير المواقع الإلكترونية
                                 </h4>
-                                <p class="text-gray-50 text-md font-normal leading-snug">إنشاء
-                                    مواقع احترافية متجاوبة
-                                    باستخدام أحدث التقنيات مثل Laravel،
-                                    React، وTailwind.</p>
+                                <p class="text-gray-50 text-md font-normal leading-snug">
+                                    إنشاء مواقع احترافية متجاوبة باستخدام أحدث التقنيات مثل
+                                    Laravel، React، وTailwind.
+                                </p>
                             </div>
                         </div>
 
@@ -790,47 +753,15 @@
                             class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-3 flex">
                             <div class="flex-col justify-start items-start gap-4 inline-flex">
                                 <a href>
-                                    <img src="assets/images/app-development.png" class="w-10" alt srcset>
-
+                                    <img src="assets/images/app-development.png" class="w-10" alt srcset />
                                 </a>
-                                <h4 class="text-white text-lg font-semibold leading-8">تطوير
-                                    تطبيقات الهاتف المحمول</h4>
-                                <p class="text-gray-50 text-md font-normal leading-snug">برمجة
-                                    تطبيقات iOS و Android
-                                    باستخدام Flutter و React Native بأفضل
-                                    أداء وتجربة مستخدم.</p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
-                            <div class="flex-col justify-start items-start gap-4 inline-flex">
-                                <a href>
-                                    <img src="assets/images/ux-design.png" class="w-10" alt srcset>
-                                </a>
-                                <h4 class="text-white text-lg font-semibold leading-8">تصميم
-                                    UI/UX</h4>
-                                <p class="text-gray-50 text-md font-normal leading-snug">إنشاء
-                                    تصاميم احترافية وتجربة
-                                    مستخدم مميزة باستخدام Figma و Adobe
-                                    XD.</p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
-                            <div class="flex-col justify-start items-start gap-4 inline-flex">
-                                <a href>
-                                    <img src="assets/images/cms.png" class="w-10" alt srcset>
-
-                                </a>
-                                <h4 class="text-white text-lg font-semibold leading-8">تطوير
-                                    أنظمة إدارة المحتوى (CMS)
+                                <h4 class="text-white text-lg font-semibold leading-8">
+                                    تطوير تطبيقات الهاتف المحمول
                                 </h4>
-                                <p class="text-gray-50 text-md font-normal leading-snug">تصميم
-                                    أنظمة مخصصة لإدارة
-                                    المحتوى بسهولة مثل ووردبريس وLaravel
-                                    Nova.</p>
+                                <p class="text-gray-50 text-md font-normal leading-snug">
+                                    برمجة تطبيقات iOS و Android باستخدام Flutter و React Native
+                                    بأفضل أداء وتجربة مستخدم.
+                                </p>
                             </div>
                         </div>
 
@@ -838,57 +769,84 @@
                             class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
                             <div class="flex-col justify-start items-start gap-4 inline-flex">
                                 <a href>
-                                    <img src="assets/images/ecommerce.png" class="w-10" alt srcset>
-
+                                    <img src="assets/images/ux-design.png" class="w-10" alt srcset />
                                 </a>
-                                <h4 class="text-white text-lg font-semibold leading-8">تطوير
-                                    المتاجر الإلكترونية</h4>
-                                <p class="text-gray-50 text-md font-normal leading-snug">إنشاء
-                                    متاجر إلكترونية متكاملة
-                                    تدعم بوابات الدفع مثل PayPal و
-                                    Stripe.</p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
-                            <div class="flex-col justify-start items-start gap-4 inline-flex">
-                                <a href>
-                                    <img src="assets/images/insurance.png" class="w-10" alt srcset>
-
-                                </a>
-                                <h4 class="text-white text-lg font-semibold leading-8">أمن
-                                    المعلومات وحماية البيانات
+                                <h4 class="text-white text-lg font-semibold leading-8">
+                                    تصميم UI/UX
                                 </h4>
-                                <p class="text-gray-50 text-md font-normal leading-snug">تنفيذ
-                                    حلول حماية البيانات
-                                    والاختبار الأمني لتطبيقات الويب
-                                    والهاتف.</p>
+                                <p class="text-gray-50 text-md font-normal leading-snug">
+                                    إنشاء تصاميم احترافية وتجربة مستخدم مميزة باستخدام Figma و
+                                    Adobe XD.
+                                </p>
                             </div>
                         </div>
 
+                        <div
+                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
+                            <div class="flex-col justify-start items-start gap-4 inline-flex">
+                                <a href>
+                                    <img src="assets/images/cms.png" class="w-10" alt srcset />
+                                </a>
+                                <h4 class="text-white text-lg font-semibold leading-8">
+                                    تطوير أنظمة إدارة المحتوى (CMS)
+                                </h4>
+                                <p class="text-gray-50 text-md font-normal leading-snug">
+                                    تصميم أنظمة مخصصة لإدارة المحتوى بسهولة مثل ووردبريس
+                                    وLaravel Nova.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
+                            <div class="flex-col justify-start items-start gap-4 inline-flex">
+                                <a href>
+                                    <img src="assets/images/ecommerce.png" class="w-10" alt srcset />
+                                </a>
+                                <h4 class="text-white text-lg font-semibold leading-8">
+                                    تطوير المتاجر الإلكترونية
+                                </h4>
+                                <p class="text-gray-50 text-md font-normal leading-snug">
+                                    إنشاء متاجر إلكترونية متكاملة تدعم بوابات الدفع مثل PayPal و
+                                    Stripe.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="servBox px-6 py-8 bg-gray-900 rounded-2xl shadow-lg justify-start items-start gap-2.5 flex">
+                            <div class="flex-col justify-start items-start gap-4 inline-flex">
+                                <a href>
+                                    <img src="assets/images/insurance.png" class="w-10" alt srcset />
+                                </a>
+                                <h4 class="text-white text-lg font-semibold leading-8">
+                                    أمن المعلومات وحماية البيانات
+                                </h4>
+                                <p class="text-gray-50 text-md font-normal leading-snug">
+                                    تنفيذ حلول حماية البيانات والاختبار الأمني لتطبيقات المواقع
+                                    والهاتف.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </section>
 
             <!-- FOOTER -->
-            <footer class=" m-4">
-                <div class="w-full max-w-screen-xl mx-auto  md:py-8">
+            <footer class="m-4">
+                <div class="w-full max-w-screen-xl mx-auto md:py-8">
                     <div class="sm:flex sm:items-center sm:justify-between">
-                        <a href="https://flowbite.com/"
-                            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                        <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                             <img src="assets/images/favicon.png" class="h-8" alt="Flowbite Logo" />
                             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">يوسف
                             </span>
                         </a>
-                        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-300 sm:mb-0 ">
+                        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-300 sm:mb-0">
                             <li>
                                 <a href="index.html" class="hover:underline me-4 md:me-6">الرئيسية</a>
                             </li>
                             <li>
-                                <a href="contact.html" class="hover:underline me-4 md:me-6">تواصل
-                                    معي</a>
+                                <a href="contact.html" class="hover:underline me-4 md:me-6">تواصل معي</a>
                             </li>
                             <li>
                                 <a href="index.html#exp" class="hover:underline me-4 md:me-6">الخبرات</a>
@@ -896,22 +854,18 @@
                             <li>
                                 <a href="index.html#projects" class="hover:underline">المشاريع</a>
                             </li>
-
                         </ul>
                     </div>
                     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                     <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
-                        <span class="block text-md text-[#a0a0a0] sm:text-center dark:text-gray-300">تصميم
-                            وتطوير / <span class="text-[#2196f3]">يوسف
-                                الصباحي</span> </span>
-                        <span class="block text-md text-[#a0a0a0] sm:text-center dark:text-gray-300">©
-                            2025 جميع الحقوق
+                        <span class="block text-md text-[#a0a0a0] sm:text-center dark:text-gray-300">تصميم وتطوير /
+                            <span class="text-[#2196f3]">يوسف الصباحي</span>
+                        </span>
+                        <span class="block text-md text-[#a0a0a0] sm:text-center dark:text-gray-300">© 2025 جميع الحقوق
                             محفوظة</span>
-
                     </div>
                 </div>
             </footer>
-
         </main>
         <!-- END CONTAINER -->
         <!-- TOP -->
@@ -960,7 +914,8 @@
                                 id="meteor-icon-kit__solid-github" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M12.2047 0.00001C6.56031 -0.005731 1.74628 4.08615 0.842541 9.6577C-0.061195 15.2293 3.2126 20.6331 8.56941 22.4118C9.14823 22.5177 9.35294 22.1577 9.35294 21.8541C9.35294 21.5506 9.35294 20.8588 9.35294 19.8988C6.14117 20.5977 5.46353 18.3529 5.46353 18.3529C5.25046 17.6572 4.79779 17.0595 4.18588 16.6659C3.14823 15.96 4.27059 15.96 4.27059 15.96C5.00761 16.0641 5.65578 16.5014 6.02823 17.1459C6.34368 17.7179 6.87393 18.1406 7.50179 18.3208C8.12965 18.5009 8.8034 18.4236 9.37411 18.1059C9.41842 17.5252 9.66876 16.9794 10.08 16.5671C7.5247 16.2777 4.84235 15.2894 4.84235 10.92C4.82481 9.7786 5.24688 8.67412 6.02117 7.8353C5.67632 6.84285 5.71662 5.7571 6.13412 4.79295C6.13412 4.79295 7.10117 4.48236 9.29647 5.97177C11.1816 5.45419 13.1713 5.45419 15.0565 5.97177C17.2518 4.48236 18.2118 4.79295 18.2118 4.79295C18.6351 5.74689 18.6854 6.82486 18.3529 7.81412C19.1272 8.65294 19.5493 9.7574 19.5318 10.8988C19.5318 15.3177 16.8424 16.2847 14.28 16.5459C14.8359 17.1047 15.1218 17.8774 15.0635 18.6635C15.0635 20.2024 15.0635 21.4447 15.0635 21.8188C15.0635 22.1929 15.2682 22.4824 15.8541 22.3694C21.1473 20.5447 24.3569 15.1728 23.4554 9.6469C22.5539 4.1211 17.8034 0.04779 12.2047 0.00001z"
-                                    fill="#758CA3" /></svg>
+                                    fill="#758CA3" />
+                            </svg>
                         </button>
                     </a>
 
@@ -992,7 +947,6 @@
                             </svg>
                         </button>
                     </a>
-
                 </div>
                 <button id="shareButton"
                     class="bg-[#2196f3] hover:bg-gradient hover:border border-[#2196f3] text-white p-3 rounded-full flex items-center justify-center transition-all duration-200 shadow-lg">
@@ -1014,7 +968,6 @@
                 </button>
             </div>
         </div>
-
     </div>
 
     <!-- PAGEDONE -->
@@ -1022,7 +975,7 @@
     <!-- FLOWBITE -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <!-- JQUERY -->
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
@@ -1033,7 +986,6 @@
     <script src="assets/js/des.js"></script>
     <script src="assets/js/stars.js"></script>
     <script src="assets/js/animationHome.js"></script>
-
 </body>
 
 </html>
